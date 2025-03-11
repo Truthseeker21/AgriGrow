@@ -1,136 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- App Info -->
+    <!-- App Information -->
     <string name="app_name">AgriGrow</string>
-    <string name="app_tagline">Urban Gardening and Sustainability Farming Guide</string>
-    <string name="grow_sustainability">Grow food, grow community, grow sustainability</string>
-
-    <!-- Common -->
-    <string name="all">All</string>
-    <string name="ok">OK</string>
-    <string name="cancel">Cancel</string>
-    <string name="save">Save</string>
-    <string name="loading">Loading…</string>
-
-    <!-- Main Activity -->
-    <string name="app_logo">App Logo</string>
-
-    <!-- Home Screen -->
-    <string name="good_morning">Good Morning!</string>
-    <string name="good_afternoon">Good Afternoon!</string>
-    <string name="good_evening">Good Evening!</string>
-    <string name="location_loading">Detecting your location…</string>
-    <string name="location_unavailable">Location not available</string>
-    <string name="current_season_format">Current Season: %s</string>
-    <string name="weather_loading">Loading weather data…</string>
-    <string name="weather_unavailable">Weather information not available</string>
-    <string name="tip_of_the_day">Tip of the Day</string>
-    <string name="sample_tip">Water your plants early in the morning to minimize evaporation and prevent fungal diseases. This allows the foliage to dry before evening.</string>
-    <string name="seasonal_plants">Seasonal Plants</string>
-    <string name="seasonal_plants_description">Plants that thrive in the current season</string>
-    <string name="recommended_guides">Recommended Guides</string>
-    <string name="recommended_guides_description">Gardening techniques suited for your space</string>
-
-    <!-- Plants Screen -->
-    <string name="urban_plants">Urban Plants</string>
-    <string name="search_plants">Search plants…</string>
-    <string name="filter_by">Filter by:</string>
-    <string name="difficulty">Difficulty:</string>
-    <string name="sunlight">Sunlight:</string>
-    <string name="container">Container:</string>
-    <string name="container_yes">Yes</string>
-    <string name="container_no">No</string>
-    <string name="no_plants_found">No plants found matching your criteria</string>
-    <string name="plant_image">Plant image</string>
-    <string name="bookmark">Bookmark</string>
-
-    <!-- Guides Screen -->
-    <string name="gardening_techniques">Gardening Techniques</string>
-    <string name="search_guides">Search gardening techniques…</string>
-    <string name="space">Space:</string>
-    <string name="no_guides_found">No guides found matching your criteria</string>
-    <string name="guide_image">Guide image</string>
-    <string name="favorite">Favorite</string>
-
-    <!-- Forum Screen -->
-    <string name="community_forum">Community Forum</string>
-    <string name="all_posts">All</string>
-    <string name="questions">Questions</string>
-    <string name="tips">Tips</string>
-    <string name="showcase">Showcase</string>
-    <string name="add_post">Add post</string>
-    <string name="create_new_post">Create a New Post</string>
-    <string name="post_title">Title</string>
-    <string name="post_content">Share your thoughts, questions, or experiences…</string>
-    <string name="post_type">Post Type</string>
-    <string name="question">Question</string>
-    <string name="tip">Tip</string>
-    <string name="post">Post</string>
-    <string name="post_added_successfully">Post added successfully</string>
-    <string name="error_adding_post">Failed to add post</string>
-    <string name="error_empty_title">Title cannot be empty</string>
-    <string name="error_empty_content">Content cannot be empty</string>
-    <string name="author_image">Author image</string>
-    <string name="post_image">Post image</string>
-    <string name="like">Like</string>
-    <string name="comment">Comment</string>
-
-    <!-- Profile Screen -->
-    <string name="profile_image">Profile image</string>
-    <string name="profile_name_placeholder">Urban Gardener</string>
-    <string name="profile_location_placeholder">General Santos City</string>
-    <string name="experience_level_format">Experience Level: %d/5</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="about_me">About Me</string>
-    <string name="bio_placeholder">Passionate about urban gardening and sustainability.</string>
-    <string name="garden_type">Garden Type</string>
-    <string name="garden_type_placeholder">Balcony</string>
-    <string name="points">Points</string>
-    <string name="points_format">%d points</string>
-    <string name="saved_plants">Saved Plants</string>
-    <string name="saved_guides">Saved Guides</string>
-    <string name="achievements">Achievements</string>
-    <string name="no_saved_items">You haven\'t saved any items yet</string>
-    <string name="no_saved_plants">You haven\'t saved any plants yet</string>
-    <string name="no_saved_guides">You haven\'t saved any guides yet</string>
-    <string name="achievements_coming_soon">Achievements feature coming soon!</string>
-    <string name="edit_profile_not_implemented">Edit profile feature coming soon!</string>
-
-    <!-- Bottom Navigation -->
+    <string name="app_tagline">Your Urban Gardening Companion</string>
+    <string name="app_logo">AgriGrow Logo</string>
+    
+    <!-- Navigation Labels -->
     <string name="nav_home">Home</string>
     <string name="nav_guides">Guides</string>
     <string name="nav_plants">Plants</string>
     <string name="nav_forum">Forum</string>
     <string name="nav_profile">Profile</string>
-
-    <!-- Array Values -->
-    <string-array name="difficulty_levels">
-        <item>All</item>
-        <item>Beginner</item>
-        <item>Intermediate</item>
-        <item>Advanced</item>
-    </string-array>
-
-    <string-array name="space_requirements">
-        <item>All</item>
-        <item>Minimal</item>
-        <item>Moderate</item>
-        <item>Large</item>
-    </string-array>
-
-    <string-array name="sunlight_requirements">
-        <item>All</item>
-        <item>Full Sun</item>
-        <item>Partial Sun</item>
-        <item>Partial Shade</item>
-        <item>Full Shade</item>
-    </string-array>
-
-    <string-array name="container_options">
-        <item>All</item>
-        <item>Yes</item>
-        <item>No</item>
-    </string-array>
-
-    <!-- Permissions -->
-    <string name="permission_location_rationale">Location permission is needed to provide plant recommendations based on your climate.</string>
+    
+    <!-- Home Fragment -->
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+    <string name="weather_today">Today\'s Weather</string>
+    <string name="garden_status">Garden Status</string>
+    <string name="plants_to_water">Plants to Water Today</string>
+    <string name="recommended_plants">Recommended for You</string>
+    <string name="seasonal_plants">In Season Now</string>
+    <string name="no_plants">No plants in your garden yet</string>
+    <string name="add_first_plant">Add your first plant</string>
+    
+    <!-- Plants Fragment -->
+    <string name="search_plants">Search plants…</string>
+    <string name="filter_plants">Filter</string>
+    <string name="sort_plants">Sort</string>
+    <string name="my_garden">My Garden</string>
+    <string name="all_plants">All Plants</string>
+    <string name="recommended">Recommended</string>
+    <string name="indoors">Indoor Plants</string>
+    <string name="outdoors">Outdoor Plants</string>
+    <string name="edible">Edible Plants</string>
+    <string name="ornamental">Ornamental Plants</string>
+    <string name="add_to_garden">Add to Garden</string>
+    <string name="remove_from_garden">Remove</string>
+    <string name="difficulty_level">Difficulty Level: %1$s</string>
+    <string name="watering_needs">Watering: Every %1$d days</string>
+    <string name="sunlight_requirements">Sunlight: %1$s</string>
+    <string name="growing_season">Season: %1$s</string>
+    
+    <!-- Guides Fragment -->
+    <string name="search_guides">Search guides…</string>
+    <string name="filter_guides">Filter</string>
+    <string name="sort_guides">Sort</string>
+    <string name="beginner_guides">For Beginners</string>
+    <string name="all_guides">All Guides</string>
+    <string name="favorite_guides">Favorites</string>
+    <string name="small_space">Small Spaces</string>
+    <string name="low_maintenance">Low Maintenance</string>
+    <string name="bookmark_guide">Bookmark</string>
+    <string name="remove_bookmark">Remove Bookmark</string>
+    <string name="guide_difficulty">Difficulty: %1$s</string>
+    <string name="guide_space">Space Needed: %1$s</string>
+    <string name="guide_maintenance">Maintenance: %1$s</string>
+    
+    <!-- Forum Fragment -->
+    <string name="search_forum">Search forum…</string>
+    <string name="new_post">New Post</string>
+    <string name="recent_posts">Recent Posts</string>
+    <string name="popular_posts">Popular</string>
+    <string name="my_posts">My Posts</string>
+    <string name="questions">Questions</string>
+    <string name="showcases">Showcases</string>
+    <string name="tips">Tips &amp; Tricks</string>
+    <string name="post_title">Title</string>
+    <string name="post_content">Share your thoughts…</string>
+    <string name="post_add_photo">Add Photo</string>
+    <string name="post_add_tag">Add Tags</string>
+    <string name="post_submit">Post</string>
+    <string name="post_cancel">Cancel</string>
+    <string name="comment_hint">Write a comment…</string>
+    <string name="comments">Comments</string>
+    <string name="likes">Likes</string>
+    
+    <!-- Profile Fragment -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_garden_stats">My Garden Stats</string>
+    <string name="plants_growing">Plants Growing</string>
+    <string name="garden_points">Garden Points</string>
+    <string name="forum_activity">Forum Activity</string>
+    <string name="posts">Posts</string>
+    <string name="comments_made">Comments</string>
+    <string name="saved_content">Saved Content</string>
+    <string name="saved_plants">Saved Plants</string>
+    <string name="saved_guides">Saved Guides</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+    
+    <!-- AR Feature -->
+    <string name="ar_place_plant">Place Your Plant</string>
+    <string name="ar_instructions">Move your phone around to detect surfaces</string>
+    <string name="ar_tap_to_place">Tap to place your plant</string>
+    <string name="ar_not_supported">AR is not supported on this device</string>
+    
+    <!-- Plant Identification -->
+    <string name="identify_plant">Identify Plant</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="identifying">Identifying plant…</string>
+    <string name="identification_result">We think this is:</string>
+    <string name="identification_confidence">Confidence: %1$d%%</string>
+    <string name="identification_no_match">We couldn\'t identify this plant</string>
+    <string name="try_again">Try Again</string>
+    
+    <!-- Weather Information -->
+    <string name="current_temp">%1$d°</string>
+    <string name="weather_condition">Condition: %1$s</string>
+    <string name="humidity">Humidity: %1$d%%</string>
+    <string name="wind_speed">Wind: %1$s km/h</string>
+    <string name="precipitation">Precipitation: %1$d%%</string>
+    <string name="forecast">5-Day Forecast</string>
+    
+    <!-- Plant Care Reminders -->
+    <string name="watering_reminder">Time to water your %1$s!</string>
+    <string name="fertilizing_reminder">Your %1$s needs fertilizing today</string>
+    <string name="harvesting_reminder">Your %1$s is ready for harvest!</string>
+    <string name="general_reminder">Plant care reminder for %1$s</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_save">Save</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_add">Add</string>
+    <string name="dialog_remove">Remove</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    
+    <!-- Errors and Status Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_loading">Error loading data. Please try again.</string>
+    <string name="error_permission">This feature requires permissions to work properly.</string>
+    <string name="success_added">Successfully added to your garden!</string>
+    <string name="success_removed">Successfully removed from your garden.</string>
+    <string name="success_saved">Successfully saved!</string>
+    <string name="success_posted">Your post has been published!</string>
+    <string name="loading">Loading…</string>
+    
+    <!-- Accessibility -->
+    <string name="content_desc_plant_image">Plant image</string>
+    <string name="content_desc_guide_image">Gardening technique image</string>
+    <string name="content_desc_user_avatar">User profile picture</string>
+    <string name="content_desc_weather_icon">Weather condition icon</string>
+    <string name="content_desc_back">Go back</string>
+    <string name="content_desc_add">Add item</string>
+    <string name="content_desc_share">Share</string>
+    <string name="content_desc_bookmark">Bookmark</string>
+    <string name="content_desc_like">Like</string>
+    <string name="content_desc_comment">Comment</string>
+    
+    <!-- Plant Difficulty Levels -->
+    <string name="difficulty_beginner">Beginner</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_moderate">Moderate</string>
+    <string name="difficulty_intermediate">Intermediate</string>
+    <string name="difficulty_advanced">Advanced</string>
+    <string name="difficulty_expert">Expert</string>
+    
+    <!-- Plant Requirements -->
+    <string name="sunlight_full">Full Sun</string>
+    <string name="sunlight_partial">Partial Sun</string>
+    <string name="sunlight_shade">Shade</string>
+    <string name="watering_frequent">Frequent</string>
+    <string name="watering_moderate">Moderate</string>
+    <string name="watering_minimal">Minimal</string>
+    <string name="soil_loamy">Loamy</string>
+    <string name="soil_sandy">Sandy</string>
+    <string name="soil_clay">Clay</string>
+    <string name="soil_peaty">Peaty</string>
+    <string name="soil_chalky">Chalky</string>
+    
+    <!-- Seasons -->
+    <string name="season_spring">Spring</string>
+    <string name="season_summer">Summer</string>
+    <string name="season_fall">Fall</string>
+    <string name="season_winter">Winter</string>
+    <string name="season_year_round">Year-round</string>
+    
+    <!-- Maintenance Levels -->
+    <string name="maintenance_low">Low Maintenance</string>
+    <string name="maintenance_medium">Medium Maintenance</string>
+    <string name="maintenance_high">High Maintenance</string>
+    
+    <!-- Space Requirements -->
+    <string name="space_minimal">Minimal Space</string>
+    <string name="space_small">Small Space</string>
+    <string name="space_medium">Medium Space</string>
+    <string name="space_large">Large Space</string>
 </resources>

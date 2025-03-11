@@ -1,53 +1,89 @@
 package com.agrigrow.model;
 
-import java.util.List;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.ColumnInfo;
 
 /**
- * Model class representing a plant with its attributes and growing requirements.
+ * Entity class representing a plant in the database
  */
+@Entity(tableName = "plants")
 public class Plant {
+    @PrimaryKey(autoGenerate = true)
     private int id;
+
+    @ColumnInfo(name = "name")
     private String name;
+
+    @ColumnInfo(name = "scientific_name")
     private String scientificName;
+
+    @ColumnInfo(name = "description")
     private String description;
-    private String careInstructions;
-    private String wateringNeeds; // e.g., "daily", "weekly"
-    private String sunlightRequirements; // e.g., "full sun", "partial shade"
-    private String soilType; // e.g., "well-draining", "loamy"
-    private int growthDurationDays;
-    private String harvestInstructions;
-    private boolean suitableForContainers;
-    private boolean suitableForIndoor;
-    private String idealTemperatureRange;
-    private String seasonToPlant;
-    private String difficultyLevel; // e.g., "beginner", "intermediate", "advanced"
-    private List<String> companionPlants;
-    private List<String> pestThreats;
-    private List<String> diseaseThreats;
+
+    @ColumnInfo(name = "image_url")
     private String imageUrl;
+
+    @ColumnInfo(name = "watering_frequency")
+    private int wateringFrequency; // in days
+
+    @ColumnInfo(name = "sunlight_requirement")
+    private String sunlightRequirement;
+
+    @ColumnInfo(name = "temperature_min")
+    private float temperatureMin;
+
+    @ColumnInfo(name = "temperature_max")
+    private float temperatureMax;
+
+    @ColumnInfo(name = "growing_season")
+    private String growingSeason;
+
+    @ColumnInfo(name = "difficulty_level")
+    private int difficultyLevel; // 1-5 scale
+
+    @ColumnInfo(name = "planting_depth")
+    private float plantingDepth; // in inches
+
+    @ColumnInfo(name = "days_to_germination")
+    private int daysToGermination;
+
+    @ColumnInfo(name = "days_to_harvest")
+    private int daysToHarvest;
+
+    @ColumnInfo(name = "is_in_user_garden")
+    private boolean isInUserGarden;
+
+    @ColumnInfo(name = "planting_date")
+    private long plantingDate; // timestamp
+    
+    @ColumnInfo(name = "is_bookmarked")
     private boolean isBookmarked;
 
-    // Default constructor
-    public Plant() {
-    }
-
-    // Parameterized constructor with essential fields
-    public Plant(int id, String name, String description, String wateringNeeds, 
-                String sunlightRequirements, String soilType, int growthDurationDays, 
-                String difficultyLevel, String imageUrl) {
-        this.id = id;
+    // Constructor
+    public Plant(String name, String scientificName, String description, String imageUrl,
+                int wateringFrequency, String sunlightRequirement, float temperatureMin,
+                float temperatureMax, String growingSeason, int difficultyLevel,
+                float plantingDepth, int daysToGermination, int daysToHarvest) {
         this.name = name;
+        this.scientificName = scientificName;
         this.description = description;
-        this.wateringNeeds = wateringNeeds;
-        this.sunlightRequirements = sunlightRequirements;
-        this.soilType = soilType;
-        this.growthDurationDays = growthDurationDays;
-        this.difficultyLevel = difficultyLevel;
         this.imageUrl = imageUrl;
+        this.wateringFrequency = wateringFrequency;
+        this.sunlightRequirement = sunlightRequirement;
+        this.temperatureMin = temperatureMin;
+        this.temperatureMax = temperatureMax;
+        this.growingSeason = growingSeason;
+        this.difficultyLevel = difficultyLevel;
+        this.plantingDepth = plantingDepth;
+        this.daysToGermination = daysToGermination;
+        this.daysToHarvest = daysToHarvest;
+        this.isInUserGarden = false;
+        this.plantingDate = 0;
         this.isBookmarked = false;
     }
 
-    // Getters and setters
+    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -80,118 +116,6 @@ public class Plant {
         this.description = description;
     }
 
-    public String getCareInstructions() {
-        return careInstructions;
-    }
-
-    public void setCareInstructions(String careInstructions) {
-        this.careInstructions = careInstructions;
-    }
-
-    public String getWateringNeeds() {
-        return wateringNeeds;
-    }
-
-    public void setWateringNeeds(String wateringNeeds) {
-        this.wateringNeeds = wateringNeeds;
-    }
-
-    public String getSunlightRequirements() {
-        return sunlightRequirements;
-    }
-
-    public void setSunlightRequirements(String sunlightRequirements) {
-        this.sunlightRequirements = sunlightRequirements;
-    }
-
-    public String getSoilType() {
-        return soilType;
-    }
-
-    public void setSoilType(String soilType) {
-        this.soilType = soilType;
-    }
-
-    public int getGrowthDurationDays() {
-        return growthDurationDays;
-    }
-
-    public void setGrowthDurationDays(int growthDurationDays) {
-        this.growthDurationDays = growthDurationDays;
-    }
-
-    public String getHarvestInstructions() {
-        return harvestInstructions;
-    }
-
-    public void setHarvestInstructions(String harvestInstructions) {
-        this.harvestInstructions = harvestInstructions;
-    }
-
-    public boolean isSuitableForContainers() {
-        return suitableForContainers;
-    }
-
-    public void setSuitableForContainers(boolean suitableForContainers) {
-        this.suitableForContainers = suitableForContainers;
-    }
-
-    public boolean isSuitableForIndoor() {
-        return suitableForIndoor;
-    }
-
-    public void setSuitableForIndoor(boolean suitableForIndoor) {
-        this.suitableForIndoor = suitableForIndoor;
-    }
-
-    public String getIdealTemperatureRange() {
-        return idealTemperatureRange;
-    }
-
-    public void setIdealTemperatureRange(String idealTemperatureRange) {
-        this.idealTemperatureRange = idealTemperatureRange;
-    }
-
-    public String getSeasonToPlant() {
-        return seasonToPlant;
-    }
-
-    public void setSeasonToPlant(String seasonToPlant) {
-        this.seasonToPlant = seasonToPlant;
-    }
-
-    public String getDifficultyLevel() {
-        return difficultyLevel;
-    }
-
-    public void setDifficultyLevel(String difficultyLevel) {
-        this.difficultyLevel = difficultyLevel;
-    }
-
-    public List<String> getCompanionPlants() {
-        return companionPlants;
-    }
-
-    public void setCompanionPlants(List<String> companionPlants) {
-        this.companionPlants = companionPlants;
-    }
-
-    public List<String> getPestThreats() {
-        return pestThreats;
-    }
-
-    public void setPestThreats(List<String> pestThreats) {
-        this.pestThreats = pestThreats;
-    }
-
-    public List<String> getDiseaseThreats() {
-        return diseaseThreats;
-    }
-
-    public void setDiseaseThreats(List<String> diseaseThreats) {
-        this.diseaseThreats = diseaseThreats;
-    }
-
     public String getImageUrl() {
         return imageUrl;
     }
@@ -200,11 +124,99 @@ public class Plant {
         this.imageUrl = imageUrl;
     }
 
+    public int getWateringFrequency() {
+        return wateringFrequency;
+    }
+
+    public void setWateringFrequency(int wateringFrequency) {
+        this.wateringFrequency = wateringFrequency;
+    }
+
+    public String getSunlightRequirement() {
+        return sunlightRequirement;
+    }
+
+    public void setSunlightRequirement(String sunlightRequirement) {
+        this.sunlightRequirement = sunlightRequirement;
+    }
+
+    public float getTemperatureMin() {
+        return temperatureMin;
+    }
+
+    public void setTemperatureMin(float temperatureMin) {
+        this.temperatureMin = temperatureMin;
+    }
+
+    public float getTemperatureMax() {
+        return temperatureMax;
+    }
+
+    public void setTemperatureMax(float temperatureMax) {
+        this.temperatureMax = temperatureMax;
+    }
+
+    public String getGrowingSeason() {
+        return growingSeason;
+    }
+
+    public void setGrowingSeason(String growingSeason) {
+        this.growingSeason = growingSeason;
+    }
+
+    public int getDifficultyLevel() {
+        return difficultyLevel;
+    }
+
+    public void setDifficultyLevel(int difficultyLevel) {
+        this.difficultyLevel = difficultyLevel;
+    }
+
+    public float getPlantingDepth() {
+        return plantingDepth;
+    }
+
+    public void setPlantingDepth(float plantingDepth) {
+        this.plantingDepth = plantingDepth;
+    }
+
+    public int getDaysToGermination() {
+        return daysToGermination;
+    }
+
+    public void setDaysToGermination(int daysToGermination) {
+        this.daysToGermination = daysToGermination;
+    }
+
+    public int getDaysToHarvest() {
+        return daysToHarvest;
+    }
+
+    public void setDaysToHarvest(int daysToHarvest) {
+        this.daysToHarvest = daysToHarvest;
+    }
+
+    public boolean isInUserGarden() {
+        return isInUserGarden;
+    }
+
+    public void setInUserGarden(boolean inUserGarden) {
+        isInUserGarden = inUserGarden;
+    }
+
+    public long getPlantingDate() {
+        return plantingDate;
+    }
+
+    public void setPlantingDate(long plantingDate) {
+        this.plantingDate = plantingDate;
+    }
+    
     public boolean isBookmarked() {
         return isBookmarked;
     }
-
+    
     public void setBookmarked(boolean bookmarked) {
-        isBookmarked = bookmarked;
+        this.isBookmarked = bookmarked;
     }
 }

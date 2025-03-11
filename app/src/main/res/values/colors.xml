@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors -->
-    <color name="colorPrimary">#4CAF50</color>
-    <color name="colorPrimaryDark">#388E3C</color>
-    <color name="colorAccent">#FF8F00</color>
+    <!-- Theme colors for AgriGrow - Nature-inspired palette -->
+    <color name="primary">#4CAF50</color>          <!-- Green - Main brand color -->
+    <color name="primary_variant">#388E3C</color>  <!-- Dark Green - Status bar/app bar -->
+    <color name="secondary">#8BC34A</color>        <!-- Light Green - Accent color -->
+    <color name="secondary_variant">#689F38</color><!-- Medium Green - Secondary accent -->
     
-    <!-- Background Colors -->
-    <color name="colorBackground">#F5F5F5</color>
-    <color name="colorBackgroundLight">#FFFFFF</color>
+    <!-- Complementary colors -->
+    <color name="earth_brown">#795548</color>      <!-- Brown - For soil-related elements -->
+    <color name="sky_blue">#03A9F4</color>         <!-- Blue - For water/weather elements -->
+    <color name="sunshine_yellow">#FFC107</color>  <!-- Yellow - For sun/light elements -->
+    <color name="plant_green_light">#AED581</color><!-- Light Green - For plants -->
+    <color name="plant_green_dark">#33691E</color> <!-- Dark Green - For plants -->
     
-    <!-- Text Colors -->
-    <color name="colorTextPrimary">#212121</color>
-    <color name="colorTextSecondary">#757575</color>
-    <color name="colorTextHint">#BDBDBD</color>
+    <!-- Standard colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="dark_gray">#424242</color>
+    <color name="transparent">#00000000</color>
     
-    <!-- Divider and Other UI Elements -->
-    <color name="colorDivider">#EEEEEE</color>
-    <color name="colorRipple">#33000000</color>
+    <!-- Functional colors -->
+    <color name="error">#F44336</color>            <!-- Red - Error messages -->
+    <color name="success">#4CAF50</color>          <!-- Green - Success messages -->
+    <color name="warning">#FFC107</color>          <!-- Yellow - Warning messages -->
+    <color name="info">#2196F3</color>             <!-- Blue - Information messages -->
     
-    <!-- States -->
-    <color name="colorSuccess">#4CAF50</color>
-    <color name="colorError">#F44336</color>
-    <color name="colorWarning">#FFC107</color>
-    <color name="colorInfo">#2196F3</color>
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>     <!-- Dark Gray - Primary text -->
+    <color name="text_secondary">#757575</color>   <!-- Medium Gray - Secondary text -->
+    <color name="text_hint">#BDBDBD</color>        <!-- Light Gray - Hint text -->
+    <color name="text_light">#FFFFFF</color>       <!-- White - Text on dark backgrounds -->
     
-    <!-- Transparency -->
-    <color name="colorSemiTransparent">#80000000</color>
+    <!-- Background colors -->
+    <color name="background">#FFFFFF</color>       <!-- White - Main background -->
+    <color name="background_light">#F5F5F5</color> <!-- Light Gray - Secondary background -->
+    <color name="surface">#FFFFFF</color>          <!-- White - Surface color -->
+    
+    <!-- Gardening difficulty levels -->
+    <color name="difficulty_easy">#4CAF50</color>  <!-- Green - Easy level -->
+    <color name="difficulty_medium">#FFC107</color><!-- Yellow - Medium level -->
+    <color name="difficulty_hard">#F44336</color>  <!-- Red - Hard level -->
 </resources>
