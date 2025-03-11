@@ -317,8 +317,8 @@ contract EnhancedMEVBot is IFlashLoanReceiver, Ownable, ReentrancyGuard, Pausabl
         address[] memory path = new address[](2);
         if (token == WETH) {
             path[0] = WETH;
-            // Use a hardcoded approach instead of relying on symbol()
-            path[1] = address(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48); // USDC on mainnet 
+            // Direct use of USDC address without symbol check
+            path[1] = address(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48); // USDC on mainnet
         } else {
             path[0] = token;
             path[1] = WETH;
