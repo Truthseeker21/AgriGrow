@@ -1,0 +1,51 @@
+modules = ["java"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "AndroidBuild"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "agrigrow_java_files"
+
+[[workflows.workflow]]
+name = "AndroidBuild"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./gradlew assembleDebug"
+
+[[workflows.workflow]]
+name = "agrigrow_java_files"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "find app/src/main/java/com/agrigrow -type f -name \"*.java\" | sort && find app/src/main/res/layout -type f -name \"*.xml\" | sort"
+
+[deployment]
+run = ["sh", "-c", "./gradlew assembleDebug"]

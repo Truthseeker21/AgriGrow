@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="220dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Plant Image -->
+        <ImageView
+            android:id="@+id/imageViewPlant"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/plant_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_plant" />
+
+        <!-- Bookmark Icon -->
+        <ImageView
+            android:id="@+id/imageViewBookmark"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/bookmark"
+            android:padding="4dp"
+            android:src="@drawable/ic_bookmark_outline" />
+
+        <!-- Plant Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageViewPlant"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewPlantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Basil" />
+
+            <TextView
+                android:id="@+id/textViewPlantDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                tools:text="A fragrant herb perfect for urban gardens" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewDifficultyLevel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_difficulty"
+                    android:drawablePadding="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp"
+                    tools:text="Beginner" />
+
+                <TextView
+                    android:id="@+id/textViewSunlight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_sun"
+                    android:drawablePadding="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp"
+                    tools:text="Full Sun" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:drawableStart="@drawable/ic_water"
+                android:drawablePadding="2dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                tools:text="Regular watering" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">AgriGrow</string>
+    <string name="app_tagline">Urban Gardening and Sustainability Farming Guide</string>
+    <string name="grow_sustainability">Grow food, grow community, grow sustainability</string>
+
+    <!-- Common -->
+    <string name="all">All</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Main Activity -->
+    <string name="app_logo">App Logo</string>
+
+    <!-- Home Screen -->
+    <string name="good_morning">Good Morning!</string>
+    <string name="good_afternoon">Good Afternoon!</string>
+    <string name="good_evening">Good Evening!</string>
+    <string name="location_loading">Detecting your location…</string>
+    <string name="location_unavailable">Location not available</string>
+    <string name="current_season_format">Current Season: %s</string>
+    <string name="weather_loading">Loading weather data…</string>
+    <string name="weather_unavailable">Weather information not available</string>
+    <string name="tip_of_the_day">Tip of the Day</string>
+    <string name="sample_tip">Water your plants early in the morning to minimize evaporation and prevent fungal diseases. This allows the foliage to dry before evening.</string>
+    <string name="seasonal_plants">Seasonal Plants</string>
+    <string name="seasonal_plants_description">Plants that thrive in the current season</string>
+    <string name="recommended_guides">Recommended Guides</string>
+    <string name="recommended_guides_description">Gardening techniques suited for your space</string>
+
+    <!-- Plants Screen -->
+    <string name="urban_plants">Urban Plants</string>
+    <string name="search_plants">Search plants…</string>
+    <string name="filter_by">Filter by:</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="sunlight">Sunlight:</string>
+    <string name="container">Container:</string>
+    <string name="container_yes">Yes</string>
+    <string name="container_no">No</string>
+    <string name="no_plants_found">No plants found matching your criteria</string>
+    <string name="plant_image">Plant image</string>
+    <string name="bookmark">Bookmark</string>
+
+    <!-- Guides Screen -->
+    <string name="gardening_techniques">Gardening Techniques</string>
+    <string name="search_guides">Search gardening techniques…</string>
+    <string name="space">Space:</string>
+    <string name="no_guides_found">No guides found matching your criteria</string>
+    <string name="guide_image">Guide image</string>
+    <string name="favorite">Favorite</string>
+
+    <!-- Forum Screen -->
+    <string name="community_forum">Community Forum</string>
+    <string name="all_posts">All</string>
+    <string name="questions">Questions</string>
+    <string name="tips">Tips</string>
+    <string name="showcase">Showcase</string>
+    <string name="add_post">Add post</string>
+    <string name="create_new_post">Create a New Post</string>
+    <string name="post_title">Title</string>
+    <string name="post_content">Share your thoughts, questions, or experiences…</string>
+    <string name="post_type">Post Type</string>
+    <string name="question">Question</string>
+    <string name="tip">Tip</string>
+    <string name="post">Post</string>
+    <string name="post_added_successfully">Post added successfully</string>
+    <string name="error_adding_post">Failed to add post</string>
+    <string name="error_empty_title">Title cannot be empty</string>
+    <string name="error_empty_content">Content cannot be empty</string>
+    <string name="author_image">Author image</string>
+    <string name="post_image">Post image</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_image">Profile image</string>
+    <string name="profile_name_placeholder">Urban Gardener</string>
+    <string name="profile_location_placeholder">General Santos City</string>
+    <string name="experience_level_format">Experience Level: %d/5</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="about_me">About Me</string>
+    <string name="bio_placeholder">Passionate about urban gardening and sustainability.</string>
+    <string name="garden_type">Garden Type</string>
+    <string name="garden_type_placeholder">Balcony</string>
+    <string name="points">Points</string>
+    <string name="points_format">%d points</string>
+    <string name="saved_plants">Saved Plants</string>
+    <string name="saved_guides">Saved Guides</string>
+    <string name="achievements">Achievements</string>
+    <string name="no_saved_items">You haven\'t saved any items yet</string>
+    <string name="no_saved_plants">You haven\'t saved any plants yet</string>
+    <string name="no_saved_guides">You haven\'t saved any guides yet</string>
+    <string name="achievements_coming_soon">Achievements feature coming soon!</string>
+    <string name="edit_profile_not_implemented">Edit profile feature coming soon!</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_guides">Guides</string>
+    <string name="nav_plants">Plants</string>
+    <string name="nav_forum">Forum</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Array Values -->
+    <string-array name="difficulty_levels">
+        <item>All</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="space_requirements">
+        <item>All</item>
+        <item>Minimal</item>
+        <item>Moderate</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="sunlight_requirements">
+        <item>All</item>
+        <item>Full Sun</item>
+        <item>Partial Sun</item>
+        <item>Partial Shade</item>
+        <item>Full Shade</item>
+    </string-array>
+
+    <string-array name="container_options">
+        <item>All</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- Permissions -->
+    <string name="permission_location_rationale">Location permission is needed to provide plant recommendations based on your climate.</string>
+</resources>
