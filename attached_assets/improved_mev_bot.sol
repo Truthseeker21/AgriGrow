@@ -5,6 +5,10 @@ pragma solidity ^0.8.20;
 // Enable IR-based code generation and optimization
 pragma abicoder v2;
 
+/**
+ * @custom:solidity-via-ir Enable IR-based code generation for deeper stack
+ */
+
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -245,13 +249,20 @@ contract EnhancedMEVBot is IFlashLoanReceiver, Ownable, ReentrancyGuard, Pausabl
         return returnAmounts[1];
     }
     
-    function executeOperation(
+    // Helper function to validate and prepare arbitrage parameters
+    function _validateAndPrepare(
         address[] calldata assets,
         uint256[] calldata amounts,
         uint256[] calldata premiums,
         address initiator,
         bytes calldata params
-    ) external override nonReentrant returns (bool) {
+    ) private view returns (
+        address token,
+        uint256 amount,
+        uint256 totalDebt,
+        address sourceRouter,
+        address targetRouter
+    ) {
         require(msg.sender == AAVE_LENDING_POOL, "Caller must be Aave lending pool");
         require(assets.length == 1 && amounts.length == 1, "Only single asset supported");
         
@@ -260,32 +271,30 @@ contract EnhancedMEVBot is IFlashLoanReceiver, Ownable, ReentrancyGuard, Pausabl
             abi.decode(params, (address, string, string));
         require(caller == owner(), "Unauthorized initiator");
         
-        address token = assets[0];
-        uint256 amount = amounts[0];
-        uint256 totalDebt = amount + premiums[0];
+        token = assets[0];
+        amount = amounts[0];
+        totalDebt = amount + premiums[0];
         
-        emit FlashLoanReceived(token, amount);
+        // Get routers
+        sourceRouter = dexRouters[sourceDex];
+        targetRouter = dexRouters[targetDex];
         
-        // Get routers and validate profitability
-        address sourceRouter = dexRouters[sourceDex];
-        address targetRouter = dexRouters[targetDex];
-        
-        uint256 sellPrice = getPriceOnDex(WETH, getPriceOnDex(token, amount, sourceRouter), targetRouter);
-        require(sellPrice > totalDebt, "Not profitable");
-        
-        uint256 expectedProfit = sellPrice - totalDebt;
-        require(expectedProfit > minProfitThreshold, "Profit below threshold");
-        
-        // Execute swaps using helper function
-        uint256 receivedToken = _performSwaps(token, amount, totalDebt, sourceRouter, targetRouter);
-        
-        // Verify profitability and repay
+        return (token, amount, totalDebt, sourceRouter, targetRouter);
+    }
+    
+    // Helper function to handle profit calculation and fee distribution
+    function _processProfits(
+        address token,
+        uint256 totalDebt,
+        uint256 receivedToken
+    ) private returns (bool) {
         require(receivedToken >= totalDebt, "Insufficient for repayment");
         uint256 actualProfit = receivedToken - totalDebt;
         
-        // Approve and update stats
+        // Approve loan repayment
         IERC20(token).approve(AAVE_LENDING_POOL, totalDebt);
         
+        // Update stats
         totalExecutions++;
         totalProfit += actualProfit;
         lastExecutionTimestamp = block.timestamp;
@@ -295,13 +304,51 @@ contract EnhancedMEVBot is IFlashLoanReceiver, Ownable, ReentrancyGuard, Pausabl
             uint256 fee = (actualProfit * executionFee) / 10000;
             if (fee > 0) {
                 IERC20(token).safeTransfer(owner(), fee);
-                actualProfit -= fee;
             }
         }
         
-        emit ArbitrageExecuted(token, sourceDex, targetDex, amount, actualProfit);
-        
         return true;
+    }
+
+    function executeOperation(
+        address[] calldata assets,
+        uint256[] calldata amounts,
+        uint256[] calldata premiums,
+        address initiator,
+        bytes calldata params
+    ) external override nonReentrant returns (bool) {
+        // Split validation and execution to reduce stack variables
+        (
+            address token,
+            uint256 amount,
+            uint256 totalDebt,
+            address sourceRouter,
+            address targetRouter
+        ) = _validateAndPrepare(assets, amounts, premiums, initiator, params);
+        
+        emit FlashLoanReceived(token, amount);
+        
+        // Validate profitability
+        uint256 tokenPrice = getPriceOnDex(token, amount, sourceRouter);
+        uint256 sellPrice = getPriceOnDex(WETH, tokenPrice, targetRouter);
+        require(sellPrice > totalDebt, "Not profitable");
+        
+        uint256 expectedProfit = sellPrice - totalDebt;
+        require(expectedProfit > minProfitThreshold, "Profit below threshold");
+        
+        // Execute swaps
+        uint256 receivedToken = _performSwaps(token, amount, totalDebt, sourceRouter, targetRouter);
+        
+        // Process profits and emit event
+        bool success = _processProfits(token, totalDebt, receivedToken);
+        
+        // Extract source and target DEX from params for event
+        (, string memory sourceDex, string memory targetDex) = 
+            abi.decode(params, (address, string, string));
+            
+        emit ArbitrageExecuted(token, sourceDex, targetDex, amount, receivedToken - totalDebt);
+        
+        return success;
     }
 
     /**
