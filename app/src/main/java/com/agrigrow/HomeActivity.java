@@ -56,10 +56,11 @@ public class HomeActivity extends AppCompatActivity {
     }
     
     private void setupAPIKeys() {
-        // In a production app, you would retrieve these from secure storage
-        // This is just a placeholder - real API keys would be needed for production use
-        // WeatherHelper.setApiKey("YOUR_OPENWEATHER_API_KEY");
-        // PlantIdentificationHelper.setApiKey("YOUR_PLANT_ID_API_KEY");
+        // Using the provided OpenWeather API key
+        WeatherHelper.setApiKey("9a9764e00cd96b060c80a1485198bc18");
+        
+        // Using the provided Plant ID API key
+        PlantIdentificationHelper.setApiKey("0Jpi2lXopoUXwQ4vXZMI2Gi4y9EPOnYEr1XLWKJti8jYePP6m7");
     }
 
     private void setupBottomNavigation() {
