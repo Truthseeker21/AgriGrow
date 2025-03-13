@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#EFEBE9"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Test Tube -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,25L75,25L75,90C75,95 70,100 60,100C50,100 45,95 45,90L45,25Z" />
+    
+    <!-- Test Tube Outline -->
+    <path
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="2"
+        android:pathData="M45,25L75,25L75,90C75,95 70,100 60,100C50,100 45,95 45,90L45,25Z" />
+    
+    <!-- Test Tube Top Border -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M45,25L75,25L75,30L45,30Z" />
+    
+    <!-- Soil in Test Tube -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M45,60L75,60L75,90C75,95 70,100 60,100C50,100 45,95 45,90L45,60Z" />
+    
+    <!-- Soil Layers -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M45,60L75,60L75,70L45,70Z" />
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M45,70L75,70L75,80L45,80Z" />
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M45,80L75,80L75,90C75,95 70,100 60,100C50,100 45,95 45,90L45,80Z" />
+    
+    <!-- Color Test Strips -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M50,40L70,40L70,45L50,45Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M50,45L70,45L70,50L50,50Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,50L70,50L70,55L50,55Z" />
+    
+    <!-- Test Tube Liquid Line -->
+    <path
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="1"
+        android:pathData="M45,60L75,60" />
+    
+    <!-- pH Scale -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="1"
+        android:pathData="M85,40L95,40L95,80L85,80Z" />
+    
+    <!-- pH Scale Markings -->
+    <path
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="1"
+        android:pathData="M85,50L95,50M85,60L95,60M85,70L95,70" />
+    
+    <!-- pH Levels Text -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M88,45m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M88,55m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M88,65m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M88,75m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <!-- pH Indicator Arrow -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M80,65L85,63L85,67Z" />
+    
+    <!-- Magnifying Glass -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="2"
+        android:pathData="M30,50m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    
+    <!-- Magnifying Glass Handle -->
+    <path
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="4"
+        android:pathData="M40,60L50,70" />
+    
+    <!-- Magnifying Glass Detail -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M25,45C25,45 30,43 35,45C30,47 25,45 25,45Z" />
+    
+    <!-- Nutrient Indicators -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="1"
+        android:pathData="M25,90L35,90L35,93L25,93Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M26,91L27,91L27,92L26,92Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="1"
+        android:pathData="M40,90L50,90L50,93L40,93Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M41,91L42,91L42,92L41,92Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="1"
+        android:pathData="M55,90L65,90L65,93L55,93Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M56,91L57,91L57,92L56,92Z" />
+</vector>

@@ -34,7 +34,7 @@ public class PlantIdentificationHelper {
     
     // Plant.id API endpoint - for real use, you would need to sign up at https://plant.id/
     private static final String PLANT_ID_API_URL = "https://api.plant.id/v2/identify";
-    private static String API_KEY = SecretKeys.getPlantIdApiKey(); // Fetched from SecretKeys
+    private static String API_KEY = SecretKeys.getPlantIdApiKey(); // Fetched from SecretKeys which uses BuildConfig
     
     private final Context context;
     private final Executor executor;

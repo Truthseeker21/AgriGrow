@@ -7,11 +7,11 @@ package com.agrigrow.util;
  */
 public class SecretKeys {
     
-    // Weather API key from OpenWeatherMap
-    private static String WEATHER_API_KEY = "${OPENWEATHERMAP_API_KEY}";
+    // Weather API key from OpenWeatherMap - loaded from BuildConfig
+    private static String WEATHER_API_KEY = com.agrigrow.BuildConfig.OPENWEATHERMAP_API_KEY;
     
-    // Plant Identification API key from Plant.id
-    private static String PLANT_ID_API_KEY = "${PLANT_ID_API_KEY}";
+    // Plant Identification API key from Plant.id - loaded from BuildConfig
+    private static String PLANT_ID_API_KEY = com.agrigrow.BuildConfig.PLANT_ID_API_KEY;
     
     /**
      * Get the OpenWeatherMap API key

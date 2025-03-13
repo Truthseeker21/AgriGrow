@@ -2,11 +2,23 @@ plugins {
     id 'com.android.application'
 }
 
+// Load properties
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
 android {
     namespace "com.agrigrow"
     compileSdk 32
-
+    
     defaultConfig {
+        // Add API keys from local.properties
+        buildConfigField "String", "OPENWEATHERMAP_API_KEY", "\"${localProperties.getProperty('OPENWEATHERMAP_API_KEY', '')}\""
+        buildConfigField "String", "PLANT_ID_API_KEY", "\"${localProperties.getProperty('PLANT_ID_API_KEY', '')}\""
         applicationId "com.agrigrow"
         minSdk 21
         targetSdk 32
@@ -30,6 +42,17 @@ android {
     
     buildFeatures {
         viewBinding true
+        buildConfig true
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        // Force consistent versions of lifecycle components
+        force 'androidx.lifecycle:lifecycle-viewmodel:2.4.1'
+        force 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+        force 'androidx.lifecycle:lifecycle-livedata:2.4.1'
+        force 'androidx.core:core-ktx:1.8.0'
     }
 }
 
@@ -50,8 +73,9 @@ dependencies {
     implementation 'androidx.room:room-runtime:2.4.3'
     annotationProcessor 'androidx.room:room-compiler:2.4.3'
     
-    // LiveData and ViewModel
+    // LiveData and ViewModel - forcing consistent versions
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1' // Updated to match version
     implementation 'androidx.lifecycle:lifecycle-livedata:2.4.1'
     
     // Glide for image loading

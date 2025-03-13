@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_plant_identify.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_plant_identify.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_plants.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_plants.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_alternative_plant.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_alternative_plant.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/activity_video_player.xml",
+        "source": "com.agrigrow.app-main-45:/layout/activity_video_player.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_recommendation.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_recommendation.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_plant.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_plant.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_profile.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_video_tutorials.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_video_tutorials.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/activity_home.xml",
+        "source": "com.agrigrow.app-main-45:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/dialog_add_post.xml",
+        "source": "com.agrigrow.app-main-45:/layout/dialog_add_post.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/dialog_soil_analysis.xml",
+        "source": "com.agrigrow.app-main-45:/layout/dialog_soil_analysis.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_guides.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_guides.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_watering_schedule.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_watering_schedule.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_forum_post.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_forum_post.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/dialog_add_soil_test.xml",
+        "source": "com.agrigrow.app-main-45:/layout/dialog_add_soil_test.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_gardening_guide.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_gardening_guide.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_weather.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_weather.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.agrigrow.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/dialog_soil_test_detail.xml",
+        "source": "com.agrigrow.app-main-45:/layout/dialog_soil_test_detail.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_forum.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_forum.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_local_groups.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_local_groups.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_soil_recommendation.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_soil_recommendation.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_video_tutorial.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_video_tutorial.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_plant_result.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_plant_result.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_soil_test.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_soil_test.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_forecast.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_forecast.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_journal.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_journal.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_soil_test.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_soil_test.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/fragment_home.xml",
+        "source": "com.agrigrow.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/activity_splash.xml",
+        "source": "com.agrigrow.app-main-45:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_gardening_group.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_gardening_group.xml"
+    },
+    {
+        "merged": "com.agrigrow.app-mergeDebugResources-42:/layout/item_journal_entry.xml",
+        "source": "com.agrigrow.app-main-45:/layout/item_journal_entry.xml"
+    }
+]

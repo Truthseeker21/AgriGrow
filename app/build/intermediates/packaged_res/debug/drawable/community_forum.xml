@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- First Person -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M30,40m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    
+    <!-- First Person Head -->
+    <path
+        android:fillColor="#FFCCBC"
+        android:pathData="M30,35m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    
+    <!-- First Person Speech Bubble -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M35,55L55,55L55,75L45,75L35,85L35,75L35,55Z" />
+    
+    <!-- Second Person -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M90,40m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    
+    <!-- Second Person Head -->
+    <path
+        android:fillColor="#FFCCBC"
+        android:pathData="M90,35m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    
+    <!-- Second Person Speech Bubble -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M85,55L65,55L65,75L75,75L85,85L85,75L85,55Z" />
+    
+    <!-- Third Person -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M60,90m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    
+    <!-- Third Person Head -->
+    <path
+        android:fillColor="#FFCCBC"
+        android:pathData="M60,85m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    
+    <!-- Plant in Speech Bubble 1 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M45,65C45,65 42,70 45,75C45,75 48,70 45,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M45,68C45,68 42,67 41,70C41,70 45,69 45,68Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M45,68C45,68 48,67 49,70C49,70 45,69 45,68Z" />
+    
+    <!-- Plant in Speech Bubble 2 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M75,65C75,65 72,70 75,75C75,75 78,70 75,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,68C75,68 72,67 71,70C71,70 75,69 75,68Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,68C75,68 78,67 79,70C79,70 75,69 75,68Z" />
+    
+    <!-- Text Lines in Bubbles (simplified) -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M38,60L52,60L52,61L38,61Z" />
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M68,60L82,60L82,61L68,61Z" />
+</vector>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Watering Can Body -->
+    <path
+        android:fillColor="#607D8B"
+        android:pathData="M30,60L80,60L75,90L35,90Z" />
+    
+    <!-- Watering Can Handle -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M85,60C85,60 95,45 85,30L75,35C75,35 80,45 75,55L85,60Z" />
+    
+    <!-- Watering Can Spout -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M30,60L15,50L15,70L30,75Z" />
+    
+    <!-- Water Drops -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M15,70C15,70 12,80 15,85C18,90 22,90 22,80L15,70Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M20,75C20,75 17,85 20,90C23,95 27,95 27,85L20,75Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M10,75C10,75 7,85 10,90C13,95 17,95 17,85L10,75Z" />
+    
+    <!-- Watering Can Top -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M30,50L80,50L80,60L30,60Z" />
+    
+    <!-- Watering Can Opening -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M55,50m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+    
+    <!-- Watering Can Handle Grip -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M83,35L87,33L85,40L81,42Z" />
+    
+    <!-- Watering Can Details/Highlights -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M40,65L70,65L70,67L40,67Z" />
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M40,75L70,75L70,77L40,77Z" />
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M40,85L70,85L70,87L40,87Z" />
+</vector>

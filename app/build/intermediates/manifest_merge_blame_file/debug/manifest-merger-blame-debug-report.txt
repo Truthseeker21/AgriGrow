@@ -1,0 +1,254 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.agrigrow"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="32" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/runner/workspace/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/runner/workspace/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/runner/workspace/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/runner/workspace/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/home/runner/workspace/app/src/main/AndroidManifest.xml:8:5-79
+14-->/home/runner/workspace/app/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->/home/runner/workspace/app/src/main/AndroidManifest.xml:9:5-81
+15-->/home/runner/workspace/app/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/home/runner/workspace/app/src/main/AndroidManifest.xml:10:5-65
+16-->/home/runner/workspace/app/src/main/AndroidManifest.xml:10:22-62
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/home/runner/workspace/app/src/main/AndroidManifest.xml:11:5-80
+17-->/home/runner/workspace/app/src/main/AndroidManifest.xml:11:22-77
+18    <uses-permission
+18-->/home/runner/workspace/app/src/main/AndroidManifest.xml:12:5-13:38
+19        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+19-->/home/runner/workspace/app/src/main/AndroidManifest.xml:12:22-78
+20        android:maxSdkVersion="28" />
+20-->/home/runner/workspace/app/src/main/AndroidManifest.xml:13:9-35
+21
+22    <uses-feature
+22-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+23        android:glEsVersion="0x00020000"
+23-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+24        android:required="true" />
+24-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+25
+26    <queries>
+26-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+27
+28        <!-- Needs to be explicitly declared on Android R+ -->
+29        <package android:name="com.google.android.apps.maps" />
+29-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+29-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+30        <package android:name="com.google.ar.core" />
+30-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:21:9-54
+30-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:21:18-51
+31    </queries>
+32
+33    <application
+33-->/home/runner/workspace/app/src/main/AndroidManifest.xml:15:5-75:19
+34        android:allowBackup="true"
+34-->/home/runner/workspace/app/src/main/AndroidManifest.xml:16:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.8.0] /home/runner/.gradle/caches/transforms-3/84fc0e4c90de13cc0a6441b738e1822c/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="true"
+38        android:icon="@mipmap/ic_launcher"
+38-->/home/runner/workspace/app/src/main/AndroidManifest.xml:17:9-43
+39        android:label="@string/app_name"
+39-->/home/runner/workspace/app/src/main/AndroidManifest.xml:18:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->/home/runner/workspace/app/src/main/AndroidManifest.xml:19:9-54
+41        android:supportsRtl="true"
+41-->/home/runner/workspace/app/src/main/AndroidManifest.xml:20:9-35
+42        android:theme="@style/Theme.AgriGrow" >
+42-->/home/runner/workspace/app/src/main/AndroidManifest.xml:21:9-46
+43
+44        <!-- Main Activity (Splash Screen) -->
+45        <activity
+45-->/home/runner/workspace/app/src/main/AndroidManifest.xml:24:9-33:20
+46            android:name="com.agrigrow.MainActivity"
+46-->/home/runner/workspace/app/src/main/AndroidManifest.xml:25:13-41
+47            android:exported="true"
+47-->/home/runner/workspace/app/src/main/AndroidManifest.xml:26:13-36
+48            android:screenOrientation="portrait"
+48-->/home/runner/workspace/app/src/main/AndroidManifest.xml:27:13-49
+49            android:theme="@style/Theme.AgriGrow.Splash" >
+49-->/home/runner/workspace/app/src/main/AndroidManifest.xml:28:13-57
+50            <intent-filter>
+50-->/home/runner/workspace/app/src/main/AndroidManifest.xml:29:13-32:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/home/runner/workspace/app/src/main/AndroidManifest.xml:30:17-69
+51-->/home/runner/workspace/app/src/main/AndroidManifest.xml:30:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/home/runner/workspace/app/src/main/AndroidManifest.xml:31:17-77
+53-->/home/runner/workspace/app/src/main/AndroidManifest.xml:31:27-74
+54            </intent-filter>
+55        </activity>
+56
+57        <!-- Home Activity (Main Container) -->
+58        <activity
+58-->/home/runner/workspace/app/src/main/AndroidManifest.xml:36:9-40:65
+59            android:name="com.agrigrow.HomeActivity"
+59-->/home/runner/workspace/app/src/main/AndroidManifest.xml:37:13-41
+60            android:exported="false"
+60-->/home/runner/workspace/app/src/main/AndroidManifest.xml:38:13-37
+61            android:screenOrientation="portrait"
+61-->/home/runner/workspace/app/src/main/AndroidManifest.xml:39:13-49
+62            android:theme="@style/Theme.AgriGrow.NoActionBar" />
+62-->/home/runner/workspace/app/src/main/AndroidManifest.xml:40:13-62
+63
+64        <!-- AR Activity -->
+65        <activity
+65-->/home/runner/workspace/app/src/main/AndroidManifest.xml:43:9-47:65
+66            android:name="com.agrigrow.ARActivity"
+66-->/home/runner/workspace/app/src/main/AndroidManifest.xml:44:13-39
+67            android:exported="false"
+67-->/home/runner/workspace/app/src/main/AndroidManifest.xml:45:13-37
+68            android:screenOrientation="portrait"
+68-->/home/runner/workspace/app/src/main/AndroidManifest.xml:46:13-49
+69            android:theme="@style/Theme.AgriGrow.NoActionBar" />
+69-->/home/runner/workspace/app/src/main/AndroidManifest.xml:47:13-62
+70
+71        <!-- Plant Details Activity -->
+72        <activity
+72-->/home/runner/workspace/app/src/main/AndroidManifest.xml:50:9-53:52
+73            android:name="com.agrigrow.PlantDetailsActivity"
+73-->/home/runner/workspace/app/src/main/AndroidManifest.xml:51:13-49
+74            android:exported="false"
+74-->/home/runner/workspace/app/src/main/AndroidManifest.xml:52:13-37
+75            android:screenOrientation="portrait" />
+75-->/home/runner/workspace/app/src/main/AndroidManifest.xml:53:13-49
+76
+77        <!-- Guide Details Activity -->
+78        <activity
+78-->/home/runner/workspace/app/src/main/AndroidManifest.xml:56:9-59:52
+79            android:name="com.agrigrow.GuideDetailsActivity"
+79-->/home/runner/workspace/app/src/main/AndroidManifest.xml:57:13-49
+80            android:exported="false"
+80-->/home/runner/workspace/app/src/main/AndroidManifest.xml:58:13-37
+81            android:screenOrientation="portrait" />
+81-->/home/runner/workspace/app/src/main/AndroidManifest.xml:59:13-49
+82
+83        <!-- Forum Post Details Activity -->
+84        <activity
+84-->/home/runner/workspace/app/src/main/AndroidManifest.xml:62:9-65:52
+85            android:name="com.agrigrow.ForumPostDetailsActivity"
+85-->/home/runner/workspace/app/src/main/AndroidManifest.xml:63:13-53
+86            android:exported="false"
+86-->/home/runner/workspace/app/src/main/AndroidManifest.xml:64:13-37
+87            android:screenOrientation="portrait" />
+87-->/home/runner/workspace/app/src/main/AndroidManifest.xml:65:13-49
+88
+89        <!-- Meta-data for API keys -->
+90        <meta-data
+90-->/home/runner/workspace/app/src/main/AndroidManifest.xml:68:9-70:49
+91            android:name="com.google.android.geo.API_KEY"
+91-->/home/runner/workspace/app/src/main/AndroidManifest.xml:69:13-58
+92            android:value="YOUR_MAPS_API_KEY" />
+92-->/home/runner/workspace/app/src/main/AndroidManifest.xml:70:13-46
+93        <meta-data
+93-->/home/runner/workspace/app/src/main/AndroidManifest.xml:72:9-74:40
+94            android:name="com.google.ar.core"
+94-->/home/runner/workspace/app/src/main/AndroidManifest.xml:73:13-46
+95            android:value="optional" />
+95-->/home/runner/workspace/app/src/main/AndroidManifest.xml:74:13-37
+96        <!-- Needs to be explicitly declared on P+ -->
+97        <uses-library
+97-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+98            android:name="org.apache.http.legacy"
+98-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+99            android:required="false" />
+99-->[com.google.android.gms:play-services-maps:18.0.2] /home/runner/.gradle/caches/transforms-3/08abd3f0cb88d64abbc0c7af5aadfdb3/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:18.0.1] /home/runner/.gradle/caches/transforms-3/061bb30c31a5ba7449fa99bbc176333a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:18.0.1] /home/runner/.gradle/caches/transforms-3/061bb30c31a5ba7449fa99bbc176333a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:18.0.1] /home/runner/.gradle/caches/transforms-3/061bb30c31a5ba7449fa99bbc176333a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:18.0.1] /home/runner/.gradle/caches/transforms-3/061bb30c31a5ba7449fa99bbc176333a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+105
+106        <meta-data
+106-->[com.google.android.gms:play-services-basement:18.0.0] /home/runner/.gradle/caches/transforms-3/8fafac4bec435efce8654d5de91b15c7/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+107            android:name="com.google.android.gms.version"
+107-->[com.google.android.gms:play-services-basement:18.0.0] /home/runner/.gradle/caches/transforms-3/8fafac4bec435efce8654d5de91b15c7/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+108            android:value="@integer/google_play_services_version" />
+108-->[com.google.android.gms:play-services-basement:18.0.0] /home/runner/.gradle/caches/transforms-3/8fafac4bec435efce8654d5de91b15c7/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+109
+110        <service
+110-->[androidx.room:room-runtime:2.4.3] /home/runner/.gradle/caches/transforms-3/d488740a88e41e26cb19db9f88065775/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+111            android:name="androidx.room.MultiInstanceInvalidationService"
+111-->[androidx.room:room-runtime:2.4.3] /home/runner/.gradle/caches/transforms-3/d488740a88e41e26cb19db9f88065775/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
+112            android:directBootAware="true"
+112-->[androidx.room:room-runtime:2.4.3] /home/runner/.gradle/caches/transforms-3/d488740a88e41e26cb19db9f88065775/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+113            android:exported="false" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+113-->[androidx.room:room-runtime:2.4.3] /home/runner/.gradle/caches/transforms-3/d488740a88e41e26cb19db9f88065775/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+114        <meta-data
+114-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:27:9-29:41
+115            android:name="com.google.ar.core.min_apk_version"
+115-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:28:13-62
+116            android:value="223040000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+116-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:29:13-38
+117        <activity
+117-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:31:9-37:80
+118            android:name="com.google.ar.core.InstallActivity"
+118-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:32:13-62
+119            android:configChanges="keyboardHidden|orientation|screenSize"
+119-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:33:13-74
+120            android:excludeFromRecents="true"
+120-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:34:13-46
+121            android:exported="false"
+121-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:35:13-37
+122            android:launchMode="singleTop"
+122-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:36:13-43
+123            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+123-->[com.google.ar:core:1.35.0] /home/runner/.gradle/caches/transforms-3/d12ed8ad48d14795a73929d599a1c05d/transformed/jetified-core-1.35.0/AndroidManifest.xml:37:13-77
+124
+125        <provider
+125-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+126            android:name="androidx.startup.InitializationProvider"
+126-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+127            android:authorities="com.agrigrow.androidx-startup"
+127-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+128            android:exported="false" >
+128-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+129            <meta-data
+129-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+130                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+130-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+131                android:value="androidx.startup" />
+131-->[androidx.emoji2:emoji2:1.0.0] /home/runner/.gradle/caches/transforms-3/65c1a3f87ece35c8d821b17f9bbe183c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+132            <meta-data
+132-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/runner/.gradle/caches/transforms-3/21b9cda75cdacb60cd51233e3e2754aa/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+133-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/runner/.gradle/caches/transforms-3/21b9cda75cdacb60cd51233e3e2754aa/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+134                android:value="androidx.startup" />
+134-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/runner/.gradle/caches/transforms-3/21b9cda75cdacb60cd51233e3e2754aa/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+135        </provider>
+136
+137        <uses-library
+137-->[androidx.window:window:1.0.0] /home/runner/.gradle/caches/transforms-3/abf97d5a4a2b132343df7264b08fc0c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+138            android:name="androidx.window.extensions"
+138-->[androidx.window:window:1.0.0] /home/runner/.gradle/caches/transforms-3/abf97d5a4a2b132343df7264b08fc0c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+139            android:required="false" />
+139-->[androidx.window:window:1.0.0] /home/runner/.gradle/caches/transforms-3/abf97d5a4a2b132343df7264b08fc0c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+140        <uses-library
+140-->[androidx.window:window:1.0.0] /home/runner/.gradle/caches/transforms-3/abf97d5a4a2b132343df7264b08fc0c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+141            android:name="androidx.window.sidecar"
+141-->[androidx.window:window:1.0.0] /home/runner/.gradle/caches/transforms-3/abf97d5a4a2b132343df7264b08fc0c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+142            android:required="false" />
+142-->[androidx.window:window:1.0.0] /home/runner/.gradle/caches/transforms-3/abf97d5a4a2b132343df7264b08fc0c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+143    </application>
+144
+145</manifest>
