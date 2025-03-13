@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Pot -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M40,90L80,90L75,110L45,110Z" />
+    
+    <!-- Pot Rim -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M38,90L82,90L82,95L38,95Z" />
+    
+    <!-- Soil -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M45,95L75,95L75,100L45,100Z" />
+    
+    <!-- Main Stem -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M60,40L60,90M58,50L50,45M62,60L70,55M58,70L48,65" />
+    <path
+        android:strokeColor="#2E7D32"
+        android:strokeWidth="2"
+        android:pathData="M60,40L60,90M58,50L50,45M62,60L70,55M58,70L48,65" />
+    
+    <!-- Leaves -->
+    <!-- Top Pair -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,40C60,40 50,30 60,20C70,30 60,40 60,40Z" />
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,40C60,40 70,30 60,20C50,30 60,40 60,40Z" />
+    
+    <!-- Middle Left Pair -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M50,45C50,45 40,40 35,50C45,55 50,45 50,45Z" />
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M50,45C50,45 45,35 35,40C40,50 50,45 50,45Z" />
+    
+    <!-- Middle Right Pair -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M70,55C70,55 80,50 85,60C75,65 70,55 70,55Z" />
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M70,55C70,55 75,45 85,50C80,60 70,55 70,55Z" />
+    
+    <!-- Bottom Left Pair -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M48,65C48,65 38,60 33,70C43,75 48,65 48,65Z" />
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M48,65C48,65 43,55 33,60C38,70 48,65 48,65Z" />
+    
+    <!-- Leaf Veins -->
+    <path
+        android:strokeColor="#388E3C"
+        android:strokeWidth="0.5"
+        android:pathData="M60,20L60,30M45,42L50,45M75,52L70,55M43,62L48,65" />
+    
+    <!-- Leaf Details - Serrated Edges -->
+    <path
+        android:strokeColor="#388E3C"
+        android:strokeWidth="0.5"
+        android:pathData="M55,25L53,27L57,28L55,30L59,31L57,33" />
+    <path
+        android:strokeColor="#388E3C"
+        android:strokeWidth="0.5"
+        android:pathData="M65,25L67,27L63,28L65,30L61,31L63,33" />
+    <path
+        android:strokeColor="#388E3C"
+        android:strokeWidth="0.5"
+        android:pathData="M40,42L38,44L42,46L40,48L44,50" />
+    <path
+        android:strokeColor="#388E3C"
+        android:strokeWidth="0.5"
+        android:pathData="M80,52L82,54L78,56L80,58L76,60" />
+    <path
+        android:strokeColor="#388E3C"
+        android:strokeWidth="0.5"
+        android:pathData="M38,62L36,64L40,66L38,68L42,70" />
+</vector>

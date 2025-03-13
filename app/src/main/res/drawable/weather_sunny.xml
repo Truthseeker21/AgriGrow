@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#FFFDE7"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Sun -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M60,60m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+    
+    <!-- Sun Core -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M60,60m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0" />
+    
+    <!-- Sun Rays - Long -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M60,20L65,30L55,30Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M60,100L65,90L55,90Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M20,60L30,65L30,55Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M100,60L90,65L90,55Z" />
+    
+    <!-- Sun Rays - Diagonal Long -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M31,31L42,42L34,50L26,42Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M89,31L78,42L86,50L94,42Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M31,89L42,78L34,70L26,78Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M89,89L78,78L86,70L94,78Z" />
+    
+    <!-- Sun Rays - Short -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M60,30L63,35L57,35Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M60,90L63,85L57,85Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M30,60L35,63L35,57Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M90,60L85,63L85,57Z" />
+    
+    <!-- Sun Rays - Diagonal Short -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M40,40L46,46L42,50L36,44Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M80,40L74,46L78,50L84,44Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M40,80L46,74L42,70L36,76Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M80,80L74,74L78,70L84,76Z" />
+    
+    <!-- Small Cloud -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M85,70C85,65 81,60 75,60C72,60 69,61 67,63C66,58 62,55 57,55C51,55 45,60 45,65C45,66 45,67 45,67C42,68 40,71 40,74C40,79 44,82 49,82L80,82C86,82 90,78 90,73C90,71 88,70 85,70Z" />
+    
+    <!-- Small Cloud Shadow -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M75,60C78,60 81,62 83,65C81,65 78,64 75,65C75,64 74,63 74,62C74,61 75,60 75,60Z" />
+    
+    <!-- Sun Highlights -->
+    <path
+        android:fillColor="#FFECB3"
+        android:pathData="M60,60m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+    <path
+        android:fillColor="#FFECB3"
+        android:pathData="M55,45C55,45 65,40 75,45C65,50 55,45 55,45Z" />
+    <path
+        android:fillColor="#FFECB3"
+        android:pathData="M45,65C45,65 50,75 45,85C40,75 45,65 45,65Z" />
+</vector>

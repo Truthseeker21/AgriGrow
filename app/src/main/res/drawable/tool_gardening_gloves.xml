@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Left Glove -->
+    <path
+        android:fillColor="#AED581"
+        android:pathData="M30,50L50,55L55,80L40,90L25,85L20,60Z" />
+    
+    <!-- Left Glove Cuff -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M20,60L30,50L40,55L30,65Z" />
+    
+    <!-- Left Glove Finger Outlines -->
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M42,70L45,68L48,72L45,75Z" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M47,65L50,63L53,67L50,70Z" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M50,58L53,56L55,60L52,63Z" />
+    
+    <!-- Left Glove Palm Detail -->
+    <path
+        android:fillColor="#7CB342"
+        android:pathData="M30,65L45,70L45,80L35,85Z" />
+    
+    <!-- Right Glove -->
+    <path
+        android:fillColor="#AED581"
+        android:pathData="M90,50L70,55L65,80L80,90L95,85L100,60Z" />
+    
+    <!-- Right Glove Cuff -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M100,60L90,50L80,55L90,65Z" />
+    
+    <!-- Right Glove Finger Outlines -->
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M78,70L75,68L72,72L75,75Z" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M73,65L70,63L67,67L70,70Z" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M70,58L67,56L65,60L68,63Z" />
+    
+    <!-- Right Glove Palm Detail -->
+    <path
+        android:fillColor="#7CB342"
+        android:pathData="M90,65L75,70L75,80L85,85Z" />
+    
+    <!-- Soil Particles -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M35,85m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#795548"
+        android:pathData="M45,75m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#795548"
+        android:pathData="M75,85m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#795548"
+        android:pathData="M65,75m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <!-- Stitch Details -->
+    <path
+        android:fillColor="#33691E"
+        android:pathData="M25,60L35,63L35,65L25,62Z" />
+    <path
+        android:fillColor="#33691E"
+        android:pathData="M95,60L85,63L85,65L95,62Z" />
+</vector>

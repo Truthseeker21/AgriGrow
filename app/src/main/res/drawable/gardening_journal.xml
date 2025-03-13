@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Journal Book -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M20,20L100,20L100,100L20,100Z" />
+    
+    <!-- Journal Pages -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,25L95,25L95,95L25,95Z" />
+    
+    <!-- Journal Binding -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M20,20L25,20L25,100L20,100Z" />
+    
+    <!-- Journal Strap -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M25,55L105,55L105,60L25,60Z" />
+    
+    <!-- Date Section -->
+    <path
+        android:fillColor="#EEEEEE"
+        android:pathData="M30,30L90,30L90,45L30,45Z" />
+    
+    <!-- Date Text (simplified) -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M35,35L85,35L85,36L35,36Z" />
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M35,40L65,40L65,41L35,41Z" />
+    
+    <!-- Notes Lines -->
+    <path
+        android:fillColor="#EEEEEE"
+        android:pathData="M30,65L90,65L90,70L30,70Z" />
+    <path
+        android:fillColor="#EEEEEE"
+        android:pathData="M30,75L90,75L90,80L30,80Z" />
+    <path
+        android:fillColor="#EEEEEE"
+        android:pathData="M30,85L90,85L90,90L30,90Z" />
+    
+    <!-- Small Plant Drawing -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M55,50C55,50 52,55 55,60C55,60 58,55 55,50Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,53C55,53 52,52 51,55C51,55 55,54 55,53Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,53C55,53 58,52 59,55C59,55 55,54 55,53Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,56C55,56 52,55 51,58C51,58 55,57 55,56Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,56C55,56 58,55 59,58C59,58 55,57 55,56Z" />
+    
+    <!-- Small Watering Can Drawing -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M75,50L80,50L80,55L75,55Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M80,50L85,50L85,52L80,52Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M85,50L87,50L87,58L85,58Z" />
+    
+    <!-- Water Drops -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M86,59C86,59 84,63 86,65C88,67 90,67 90,63L86,59Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M83,60C83,60 81,64 83,66C85,68 87,68 87,64L83,60Z" />
+</vector>

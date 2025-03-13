@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Plant Pot -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M35,90L85,90L80,115L40,115Z" />
+    
+    <!-- Soil -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M40,92L80,92L80,100L40,100Z" />
+    
+    <!-- Carrot Tops (Leaves) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,45C60,45 40,60 45,70C45,70 60,60 60,45Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,45C60,45 80,60 75,70C75,70 60,60 60,45Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,55C60,55 40,70 45,80C45,80 60,70 60,55Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,55C60,55 80,70 75,80C75,80 60,70 60,55Z" />
+    
+    <!-- Carrot Top Stems -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M60,45C60,45 59,57 60,70C60,70 61,57 60,45Z" />
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M60,55C60,55 59,67 60,80C60,80 61,67 60,55Z" />
+    
+    <!-- Carrot (Visible part above soil) -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M55,80L65,80L65,92L55,92Z" />
+    
+    <!-- Carrot Lines/Texture -->
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M58,80L58,92L58,80Z" />
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M62,80L62,92L62,80Z" />
+    
+    <!-- Carrot Greens Detail -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M45,70L50,65L45,70Z" />
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M75,70L70,65L75,70Z" />
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M45,80L50,75L45,80Z" />
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M75,80L70,75L75,80Z" />
+    
+    <!-- Small Carrots (Partially visible) -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M45,85L50,85L50,92L45,92Z" />
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M70,85L75,85L75,92L70,92Z" />
+    
+    <!-- Small Carrot Lines -->
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M47,85L47,92L47,85Z" />
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M72,85L72,92L72,85Z" />
+</vector>
