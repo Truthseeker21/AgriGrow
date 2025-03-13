@@ -257,17 +257,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      * Insert sample data into the database for initial usage
      */
     private void insertSampleData(SQLiteDatabase db) {
-        // Sample Plants
+        // Tropical Vegetables & Herbs for Urban Gardens
         db.execSQL("INSERT INTO " + TABLE_PLANTS + 
                 " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
                 KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
                 KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
                 KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
                 KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
-                "VALUES (1, 'Basil', 'Ocimum basilicum', " +
-                "'A fragrant herb perfect for urban gardens', 'Regular', 'Full sun', " +
-                "'Well-draining', 30, 1, 1, 'Summer', 'Beginner', " +
-                "'https://example.com/basil.jpg', 0)");
+                "VALUES (1, 'Bok Choy', 'Brassica rapa var. chinensis', " +
+                "'Popular leafy vegetable that grows quickly in containers in tropical climates', 'Regular', 'Partial to full sun', " +
+                "'Rich, well-draining', 30, 1, 1, 'Year-round', 'Beginner', " +
+                "'https://example.com/bokchoy.jpg', 0)");
         
         db.execSQL("INSERT INTO " + TABLE_PLANTS + 
                 " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
@@ -275,18 +275,151 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
                 KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
                 KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
-                "VALUES (2, 'Cherry Tomato', 'Solanum lycopersicum var. cerasiforme', " +
-                "'Compact and productive for small spaces', 'Regular', 'Full sun', " +
-                "'Rich, well-draining', 60, 1, 0, 'Summer', 'Intermediate', " +
-                "'https://example.com/cherry_tomato.jpg', 0)");
+                "VALUES (2, 'Water Spinach', 'Ipomoea aquatica', " +
+                "'Water spinach that grows well in hot, humid climate and can be harvested multiple times', 'High', 'Full sun', " +
+                "'Moist, fertile', 30, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/water_spinach.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (9, 'Bird's Eye Chili', 'Capsicum frutescens', " +
+                "'Hot chili pepper that grows as a perennial in tropical climates, good for container gardening', 'Moderate', 'Full sun', " +
+                "'Well-draining, fertile', 70, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/chili.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (10, 'Moringa', 'Moringa oleifera', " +
+                "'Nutritious tree with edible leaves, thrives in tropical climate and can be grown in large containers', 'Moderate', 'Full sun', " +
+                "'Well-draining', 90, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/moringa.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (11, 'Malabar Spinach', 'Basella alba', " +
+                "'Vine spinach that grows well in hot weather and is rich in vitamins and minerals', 'Moderate', 'Partial to full sun', " +
+                "'Fertile, well-draining', 45, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/malabar_spinach.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (12, 'Sweet Potato Leaves', 'Ipomoea batatas', " +
+                "'Sweet potato leaves that are easy to grow and can be harvested repeatedly', 'Moderate', 'Full sun', " +
+                "'Sandy, well-draining', 30, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/sweet_potato_leaves.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (13, 'Okra', 'Abelmoschus esculentus', " +
+                "'Tropical vegetable that grows well in hot weather and requires minimal care', 'Moderate', 'Full sun', " +
+                "'Fertile, well-draining', 60, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/okra.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (14, 'Calamondin', 'Citrofortunella microcarpa', " +
+                "'Citrus fruit that can be grown in containers and used for cooking and beverages in tropical climates', 'Moderate', 'Full sun', " +
+                "'Well-draining, slightly acidic', 730, 1, 0, 'Year-round', 'Intermediate', " +
+                "'https://example.com/calamondin.jpg', 0)");
         
-        // Sample Gardening Techniques
+        // Ornamental Flowers for Urban Gardens
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (3, 'Arabian Jasmine', 'Jasminum sambac', " +
+                "'Jasmine variety with sweet fragrance and small white blooms, popular in tropical gardens', 'Moderate', 'Full sun to partial shade', " +
+                "'Well-draining, fertile', 90, 1, 1, 'Year-round', 'Beginner', " +
+                "'https://example.com/arabian_jasmine.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (4, 'Tropical Hibiscus', 'Hibiscus rosa-sinensis', " +
+                "'Popular hibiscus variety with large, colorful blooms ideal for tropical urban gardens', 'Moderate', 'Full sun', " +
+                "'Rich, well-draining', 60, 1, 1, 'Year-round', 'Beginner', " +
+                "'https://example.com/tropical_hibiscus.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (5, 'Bougainvillea', 'Bougainvillea glabra', " +
+                "'Drought-tolerant flowering vine with vibrant paper-like bracts, perfect for urban gardens', 'Low', 'Full sun', " +
+                "'Well-draining', 120, 1, 0, 'Year-round', 'Beginner', " +
+                "'https://example.com/bougainvillea.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (6, 'Jungle Flame', 'Ixora coccinea', " +
+                "'Tropical garden shrub with clusters of star-shaped flowers in red, orange, or yellow', 'Moderate', 'Full sun to partial shade', " +
+                "'Rich, slightly acidic', 75, 1, 1, 'Year-round', 'Beginner', " +
+                "'https://example.com/jungle_flame.jpg', 0)");
+        
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (7, 'Gardenia', 'Gardenia jasminoides', " +
+                "'Fragrant white gardenia flowers with glossy green leaves, ideal for urban container gardens', 'Moderate', 'Partial shade', " +
+                "'Acidic, well-draining', 120, 1, 1, 'Year-round', 'Intermediate', " +
+                "'https://example.com/gardenia.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_PLANTS + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_SCIENTIFIC_NAME + ", " + 
+                KEY_DESCRIPTION + ", " + KEY_WATERING_NEEDS + ", " + KEY_SUNLIGHT_REQUIREMENTS + ", " +
+                KEY_SOIL_TYPE + ", " + KEY_GROWTH_DURATION + ", " + KEY_SUITABLE_CONTAINERS + ", " +
+                KEY_SUITABLE_INDOOR + ", " + KEY_SEASON + ", " + KEY_DIFFICULTY_LEVEL + ", " + 
+                KEY_IMAGE_URL + ", " + KEY_IS_BOOKMARKED + ") " +
+                "VALUES (8, 'Marigold', 'Tagetes', " +
+                "'Easy to grow flowers that thrive in warm climates and help repel garden pests', 'Moderate', 'Full sun', " +
+                "'Well-draining', 45, 1, 1, 'Year-round', 'Beginner', " +
+                "'https://example.com/marigold.jpg', 0)");
+        
+        // Urban Gardening Techniques for Small Spaces
         db.execSQL("INSERT INTO " + TABLE_GARDENING_TECHNIQUES + 
                 " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_DESCRIPTION + ", " + 
                 KEY_DIFFICULTY_LEVEL + ", " + KEY_SPACE_REQUIREMENT + ", " +
                 KEY_IMAGE_URL + ", " + KEY_IS_FAVORITE + ") " +
                 "VALUES (1, 'Container Gardening', " +
-                "'Growing plants in containers instead of in the ground', " +
+                "'Growing plants in containers like plastic buckets, old tires, or recycled containers - perfect for limited spaces in urban areas', " +
                 "'Beginner', 'Minimal', " +
                 "'https://example.com/container_gardening.jpg', 0)");
         
@@ -295,9 +428,45 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 KEY_DIFFICULTY_LEVEL + ", " + KEY_SPACE_REQUIREMENT + ", " +
                 KEY_IMAGE_URL + ", " + KEY_IS_FAVORITE + ") " +
                 "VALUES (2, 'Vertical Gardening', " +
-                "'Growing plants upward on supports to maximize space', " +
+                "'Growing plants upward on supports to maximize space in small urban areas using trellises or recycled materials', " +
                 "'Intermediate', 'Minimal', " +
                 "'https://example.com/vertical_gardening.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_GARDENING_TECHNIQUES + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_DESCRIPTION + ", " + 
+                KEY_DIFFICULTY_LEVEL + ", " + KEY_SPACE_REQUIREMENT + ", " +
+                KEY_IMAGE_URL + ", " + KEY_IS_FAVORITE + ") " +
+                "VALUES (3, 'Urban Hydroponics', " +
+                "'Soil-less cultivation system using water and nutrients, suitable for tropical climates and ideal for urban spaces', " +
+                "'Advanced', 'Minimal', " +
+                "'https://example.com/hydroponics.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_GARDENING_TECHNIQUES + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_DESCRIPTION + ", " + 
+                KEY_DIFFICULTY_LEVEL + ", " + KEY_SPACE_REQUIREMENT + ", " +
+                KEY_IMAGE_URL + ", " + KEY_IS_FAVORITE + ") " +
+                "VALUES (4, 'Balcony Gardening', " +
+                "'Maximizing balcony spaces in urban condos and apartments using hanging planters and strategic placement', " +
+                "'Beginner', 'Small', " +
+                "'https://example.com/balcony_gardening.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_GARDENING_TECHNIQUES + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_DESCRIPTION + ", " + 
+                KEY_DIFFICULTY_LEVEL + ", " + KEY_SPACE_REQUIREMENT + ", " +
+                KEY_IMAGE_URL + ", " + KEY_IS_FAVORITE + ") " +
+                "VALUES (5, 'Bottle Gardening', " +
+                "'Using recycled plastic bottles as planters, a sustainable approach for eco-friendly urban gardening', " +
+                "'Beginner', 'Minimal', " +
+                "'https://example.com/bottle_gardening.jpg', 0)");
+                
+        db.execSQL("INSERT INTO " + TABLE_GARDENING_TECHNIQUES + 
+                " (" + KEY_ID + ", " + KEY_NAME + ", " + KEY_DESCRIPTION + ", " + 
+                KEY_DIFFICULTY_LEVEL + ", " + KEY_SPACE_REQUIREMENT + ", " +
+                KEY_IMAGE_URL + ", " + KEY_IS_FAVORITE + ") " +
+                "VALUES (6, 'Rain Shelter Gardening', " +
+                "'Protecting plants from heavy rain in tropical areas using simple DIY shelters while allowing proper sunlight', " +
+                "'Intermediate', 'Variable', " +
+                "'https://example.com/rain_shelter.jpg', 0)");
         
         // Sample Forum Posts
         db.execSQL("INSERT INTO " + TABLE_FORUM_POSTS + 

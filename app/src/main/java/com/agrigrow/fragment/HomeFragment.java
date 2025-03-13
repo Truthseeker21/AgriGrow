@@ -198,6 +198,7 @@ public class HomeFragment extends Fragment {
     }
     
     private void initGardenTips() {
+        // General gardening tips
         gardenTips.add(new GardenTip("Water your plants at the base, not from above, to prevent disease."));
         gardenTips.add(new GardenTip("Rotate your plants each season to prevent soil depletion and disease."));
         gardenTips.add(new GardenTip("Companion planting can help deter pests naturally without chemicals."));
@@ -208,6 +209,22 @@ public class HomeFragment extends Fragment {
         gardenTips.add(new GardenTip("Early morning is the best time to water plants to minimize evaporation."));
         gardenTips.add(new GardenTip("Add compost to improve soil structure and fertility."));
         gardenTips.add(new GardenTip("Plant native species to attract beneficial insects and promote biodiversity."));
+        
+        // Tropical urban gardening tips
+        gardenTips.add(new GardenTip("Use rainwater collection systems during rainy seasons to conserve water for dry periods."));
+        gardenTips.add(new GardenTip("Plant marigolds alongside vegetables to help repel harmful insects common in tropical climates."));
+        gardenTips.add(new GardenTip("Grow leafy greens for quick harvests - many varieties are ready in just 3-4 weeks in tropical climates."));
+        gardenTips.add(new GardenTip("Create shade cloth shelters for plants during the hottest hours in summer months."));
+        gardenTips.add(new GardenTip("Use protective netting as barriers for plants, especially during rainy season to prevent pest infestations."));
+        gardenTips.add(new GardenTip("Moringa (Malunggay) cuttings root easily in water - a simple way to propagate this nutritious plant."));
+        gardenTips.add(new GardenTip("Hibiscus can be propagated easily through stem cuttings in warm tropical climates."));
+        gardenTips.add(new GardenTip("Keep containers elevated during rainy season to prevent waterlogging and root rot in heavy rainfall."));
+        gardenTips.add(new GardenTip("Bougainvillea thrives in heat and requires less water, perfect for hot urban areas with limited space."));
+        gardenTips.add(new GardenTip("Citrus trees can be kept small through regular pruning, making them perfect for container gardening."));
+        gardenTips.add(new GardenTip("Plant tropical flowering plants to attract beneficial pollinators to your urban garden."));
+        gardenTips.add(new GardenTip("Coconut coir is an excellent growing medium that retains moisture well in hot conditions."));
+        gardenTips.add(new GardenTip("Rotate your leafy greens every 3-4 weeks for continuous harvest in tropical gardens."));
+        gardenTips.add(new GardenTip("Used coffee grounds make excellent fertilizer for acid-loving plants like gardenia."));
     }
     
     private void loadRecentPlants() {

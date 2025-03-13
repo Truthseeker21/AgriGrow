@@ -290,66 +290,142 @@ public class PlantsFragment extends Fragment implements PlantAdapter.OnPlantClic
     private List<Plant> generateSamplePlants() {
         List<Plant> plants = new ArrayList<>();
         
-        // Sample plant data for UI development
-        Plant tomato = new Plant("Tomato", "A popular garden vegetable that produces red, juicy fruits. Perfect for salads and cooking.", "Vegetables");
-        tomato.setSunlightRequirement("Full Sun");
-        tomato.setWateringFrequency(2); // Medium watering
-        tomato.setDifficultyLevel(2); // Easy to moderate
-        tomato.setImageUrl("https://example.com/tomato.jpg");
-        plants.add(tomato);
+        // Tropical Vegetables & Herbs for Urban Gardening
+        Plant pechay = new Plant("Pechay", "Popular leafy vegetable that grows quickly in containers in tropical climates.", "Vegetables");
+        pechay.setSunlightRequirement("Partial to Full Sun");
+        pechay.setWateringFrequency(2); // Medium watering
+        pechay.setDifficultyLevel(1); // Easy
+        pechay.setImageUrl("https://example.com/pechay.jpg");
+        pechay.setGrowingSeason("Year-round");
+        pechay.setInGarden(true);
+        plants.add(pechay);
         
-        Plant basil = new Plant("Basil", "An aromatic herb used in Italian and Thai cooking. Grows well in containers.", "Herbs");
-        basil.setSunlightRequirement("Partial to Full Sun");
-        basil.setWateringFrequency(2); // Medium watering
-        basil.setDifficultyLevel(1); // Easy
-        basil.setImageUrl("https://example.com/basil.jpg");
-        plants.add(basil);
+        Plant kangkong = new Plant("Kangkong", "Water spinach that grows well in hot, humid climate and can be harvested multiple times.", "Vegetables");
+        kangkong.setSunlightRequirement("Full Sun");
+        kangkong.setWateringFrequency(3); // High watering
+        kangkong.setDifficultyLevel(1); // Easy
+        kangkong.setImageUrl("https://example.com/kangkong.jpg");
+        kangkong.setGrowingSeason("Year-round");
+        plants.add(kangkong);
         
-        Plant rose = new Plant("Rose", "Beautiful flowering plant with fragrant blooms. Available in many colors.", "Flowers");
-        rose.setSunlightRequirement("Full Sun");
-        rose.setWateringFrequency(2); // Medium watering
-        rose.setDifficultyLevel(3); // Moderate
-        rose.setImageUrl("https://example.com/rose.jpg");
-        rose.setBookmarked(true);
-        plants.add(rose);
+        Plant sili = new Plant("Sili", "Hot chili pepper that grows as a perennial in tropical climates, good for container gardening.", "Vegetables");
+        sili.setSunlightRequirement("Full Sun");
+        sili.setWateringFrequency(2); // Medium watering
+        sili.setDifficultyLevel(1); // Easy
+        sili.setImageUrl("https://example.com/sili.jpg");
+        sili.setGrowingSeason("Year-round");
+        plants.add(sili);
         
-        Plant strawberry = new Plant("Strawberry", "Sweet red berries that grow on small plants. Great for containers or garden beds.", "Fruits");
-        strawberry.setSunlightRequirement("Full Sun");
-        strawberry.setWateringFrequency(2); // Medium watering
-        strawberry.setDifficultyLevel(2); // Easy to moderate
-        strawberry.setImageUrl("https://example.com/strawberry.jpg");
-        strawberry.setInGarden(true);
-        plants.add(strawberry);
+        Plant malunggay = new Plant("Malunggay", "Nutritious tree with edible leaves, thrives in tropical climate and can be grown in large containers.", "Vegetables");
+        malunggay.setSunlightRequirement("Full Sun");
+        malunggay.setWateringFrequency(2); // Medium watering
+        malunggay.setDifficultyLevel(1); // Easy
+        malunggay.setImageUrl("https://example.com/malunggay.jpg");
+        malunggay.setGrowingSeason("Year-round");
+        malunggay.setBookmarked(true);
+        plants.add(malunggay);
         
+        Plant alugbati = new Plant("Alugbati", "Vine spinach that grows well in hot weather and is rich in vitamins and minerals.", "Vegetables");
+        alugbati.setSunlightRequirement("Partial to Full Sun");
+        alugbati.setWateringFrequency(2); // Medium watering
+        alugbati.setDifficultyLevel(1); // Easy
+        alugbati.setImageUrl("https://example.com/alugbati.jpg");
+        alugbati.setGrowingSeason("Year-round");
+        plants.add(alugbati);
+        
+        Plant kamoteTops = new Plant("Kamote Tops", "Sweet potato leaves that are easy to grow and can be harvested repeatedly.", "Vegetables");
+        kamoteTops.setSunlightRequirement("Full Sun");
+        kamoteTops.setWateringFrequency(2); // Medium watering
+        kamoteTops.setDifficultyLevel(1); // Easy
+        kamoteTops.setImageUrl("https://example.com/kamote_tops.jpg");
+        kamoteTops.setGrowingSeason("Year-round");
+        plants.add(kamoteTops);
+        
+        Plant okra = new Plant("Okra", "Tropical vegetable that grows well in hot weather and requires minimal care.", "Vegetables");
+        okra.setSunlightRequirement("Full Sun");
+        okra.setWateringFrequency(2); // Medium watering
+        okra.setDifficultyLevel(1); // Easy
+        okra.setImageUrl("https://example.com/okra.jpg");
+        okra.setGrowingSeason("Year-round");
+        plants.add(okra);
+        
+        Plant calamansi = new Plant("Calamansi", "Tropical citrus that can be grown in containers and used for cooking and beverages.", "Fruits");
+        calamansi.setSunlightRequirement("Full Sun");
+        calamansi.setWateringFrequency(2); // Medium watering
+        calamansi.setDifficultyLevel(2); // Moderate
+        calamansi.setImageUrl("https://example.com/calamansi.jpg");
+        calamansi.setGrowingSeason("Year-round");
+        calamansi.setInGarden(true);
+        plants.add(calamansi);
+        
+        // Tropical Ornamental Flowers
+        Plant sampaguita = new Plant("Sampaguita", "A jasmine variety with sweet fragrance and small white blooms, popular in tropical gardens.", "Flowers");
+        sampaguita.setSunlightRequirement("Full Sun to Partial Shade");
+        sampaguita.setWateringFrequency(2); // Medium watering
+        sampaguita.setDifficultyLevel(1); // Easy
+        sampaguita.setImageUrl("https://example.com/sampaguita.jpg");
+        sampaguita.setGrowingSeason("Year-round");
+        sampaguita.setBookmarked(true);
+        plants.add(sampaguita);
+        
+        Plant gumamela = new Plant("Gumamela", "Popular tropical hibiscus flower with large, colorful blooms perfect for urban gardens.", "Flowers");
+        gumamela.setSunlightRequirement("Full Sun");
+        gumamela.setWateringFrequency(2); // Medium watering
+        gumamela.setDifficultyLevel(1); // Easy
+        gumamela.setImageUrl("https://example.com/gumamela.jpg");
+        gumamela.setGrowingSeason("Year-round");
+        plants.add(gumamela);
+        
+        Plant bougainvillea = new Plant("Bougainvillea", "Drought-tolerant flowering vine with vibrant paper-like bracts, perfect for urban gardens.", "Flowers");
+        bougainvillea.setSunlightRequirement("Full Sun");
+        bougainvillea.setWateringFrequency(1); // Low watering
+        bougainvillea.setDifficultyLevel(1); // Easy
+        bougainvillea.setImageUrl("https://example.com/bougainvillea.jpg");
+        bougainvillea.setGrowingSeason("Year-round");
+        plants.add(bougainvillea);
+        
+        Plant santan = new Plant("Santan", "Common tropical garden shrub (Ixora) with clusters of star-shaped flowers in red, orange, or yellow.", "Flowers");
+        santan.setSunlightRequirement("Full Sun to Partial Shade");
+        santan.setWateringFrequency(2); // Medium watering
+        santan.setDifficultyLevel(1); // Easy
+        santan.setImageUrl("https://example.com/santan.jpg");
+        santan.setGrowingSeason("Year-round");
+        plants.add(santan);
+        
+        Plant rosal = new Plant("Rosal", "Fragrant white gardenia flowers with glossy green leaves, perfect for small garden spaces.", "Flowers");
+        rosal.setSunlightRequirement("Partial Shade");
+        rosal.setWateringFrequency(2); // Medium watering
+        rosal.setDifficultyLevel(2); // Moderate
+        rosal.setImageUrl("https://example.com/rosal.jpg");
+        rosal.setGrowingSeason("Year-round");
+        rosal.setBookmarked(true);
+        plants.add(rosal);
+        
+        Plant marigold = new Plant("Marigold", "Easy to grow flowers that thrive in warm climates and help repel garden pests.", "Flowers");
+        marigold.setSunlightRequirement("Full Sun");
+        marigold.setWateringFrequency(2); // Medium watering
+        marigold.setDifficultyLevel(1); // Easy
+        marigold.setImageUrl("https://example.com/marigold.jpg");
+        marigold.setGrowingSeason("Year-round");
+        plants.add(marigold);
+        
+        // Common Urban Plants
         Plant peaceLily = new Plant("Peace Lily", "Popular indoor plant with white flowers. Cleans the air and thrives in low light.", "Indoor");
         peaceLily.setSunlightRequirement("Low to Indirect");
         peaceLily.setWateringFrequency(1); // Low watering
         peaceLily.setDifficultyLevel(1); // Easy
         peaceLily.setImageUrl("https://example.com/peace_lily.jpg");
+        peaceLily.setGrowingSeason("Year-round");
         peaceLily.setBookmarked(true);
         plants.add(peaceLily);
         
-        Plant cucumber = new Plant("Cucumber", "Refreshing vegetable that grows on vines. Best grown in summer.", "Vegetables");
-        cucumber.setSunlightRequirement("Full Sun");
-        cucumber.setWateringFrequency(3); // High watering
-        cucumber.setDifficultyLevel(2); // Easy to moderate
-        cucumber.setImageUrl("https://example.com/cucumber.jpg");
-        cucumber.setInGarden(true);
-        plants.add(cucumber);
-        
-        Plant mint = new Plant("Mint", "Fragrant herb that spreads quickly. Great for teas and desserts.", "Herbs");
-        mint.setSunlightRequirement("Partial Sun");
-        mint.setWateringFrequency(2); // Medium watering
-        mint.setDifficultyLevel(1); // Easy
-        mint.setImageUrl("https://example.com/mint.jpg");
-        plants.add(mint);
-        
-        Plant sunflower = new Plant("Sunflower", "Tall flowers with bright yellow petals. Attracts birds and bees.", "Flowers");
-        sunflower.setSunlightRequirement("Full Sun");
-        sunflower.setWateringFrequency(2); // Medium watering
-        sunflower.setDifficultyLevel(1); // Easy
-        sunflower.setImageUrl("https://example.com/sunflower.jpg");
-        plants.add(sunflower);
+        Plant basil = new Plant("Basil", "An aromatic herb used in various cuisines around the world. Grows well in containers.", "Herbs");
+        basil.setSunlightRequirement("Partial to Full Sun");
+        basil.setWateringFrequency(2); // Medium watering
+        basil.setDifficultyLevel(1); // Easy
+        basil.setImageUrl("https://example.com/basil.jpg");
+        basil.setGrowingSeason("Year-round");
+        plants.add(basil);
         
         return plants;
     }
