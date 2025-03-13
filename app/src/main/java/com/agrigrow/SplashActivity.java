@@ -9,14 +9,21 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.agrigrow.util.PlantIdentificationHelper;
+import com.agrigrow.util.SecretKeys;
+import com.agrigrow.util.WeatherHelper;
+
 /**
  * Splash screen activity that appears at app startup
+ * This activity initializes essential components like API keys
  */
 public class SplashActivity extends AppCompatActivity {
 
+    private static final String TAG = "SplashActivity";
     private static final long SPLASH_DURATION = 2000; // 2 seconds
 
     private ImageView imageViewLogo;
@@ -49,6 +56,9 @@ public class SplashActivity extends AppCompatActivity {
         textViewTitle.startAnimation(slideUp);
         textViewSlogan.startAnimation(fadeIn);
 
+        // Initialize API Keys and Services
+        initializeApiKeys();
+        
         // Navigate to the main activity after a delay
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
@@ -56,6 +66,25 @@ public class SplashActivity extends AppCompatActivity {
                 navigateToMain();
             }
         }, SPLASH_DURATION);
+    }
+    
+    /**
+     * Initialize API keys for weather and plant identification services
+     */
+    private void initializeApiKeys() {
+        try {
+            // Normally these keys would be fetched from secure storage
+            String weatherApiKey = SecretKeys.getWeatherApiKey();
+            String plantIdApiKey = SecretKeys.getPlantIdApiKey();
+            
+            // Set API keys in helper classes
+            WeatherHelper.setApiKey(weatherApiKey);
+            PlantIdentificationHelper.setApiKey(plantIdApiKey);
+            
+            Log.d(TAG, "API keys initialized successfully");
+        } catch (Exception e) {
+            Log.e(TAG, "Error initializing API keys", e);
+        }
     }
 
     /**

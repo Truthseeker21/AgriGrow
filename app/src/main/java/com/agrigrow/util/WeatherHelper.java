@@ -34,7 +34,7 @@ public class WeatherHelper {
     
     private static final String TAG = "WeatherHelper";
     private static final String WEATHER_API_BASE_URL = "https://api.openweathermap.org/data/2.5/";
-    private static String WEATHER_API_KEY = "YOUR_API_KEY"; // This should be stored securely
+    private static String WEATHER_API_KEY = SecretKeys.getWeatherApiKey(); // Fetched from SecretKeys
     
     private final Context context;
     private final Executor executor;
