@@ -1,47 +1,33 @@
 package com.agrigrow.util;
 
+import android.content.Context;
+import android.util.Log;
+
+import com.agrigrow.BuildConfig;
+
 /**
- * Utility class to store and retrieve API keys securely.
- * In a production environment, these keys should be stored using more secure methods
- * like Android KeyStore or fetched from a secure server.
+ * Utility class to securely access API keys stored in the BuildConfig.
+ * These keys are defined in the local.properties file and accessed 
+ * through the build.gradle configuration.
  */
 public class SecretKeys {
-    
-    // Weather API key from OpenWeatherMap - loaded from BuildConfig
-    private static String WEATHER_API_KEY = com.agrigrow.BuildConfig.OPENWEATHERMAP_API_KEY;
-    
-    // Plant Identification API key from Plant.id - loaded from BuildConfig
-    private static String PLANT_ID_API_KEY = com.agrigrow.BuildConfig.PLANT_ID_API_KEY;
+    private static final String TAG = "SecretKeys";
     
     /**
-     * Get the OpenWeatherMap API key
-     * @return API key string
+     * Retrieves the OpenWeatherMap API key
+     * @param context Application context (not used with BuildConfig but kept for API consistency)
+     * @return The API key or empty string if not found
      */
-    public static String getWeatherApiKey() {
-        return WEATHER_API_KEY;
+    public static String getOpenWeatherMapApiKey(Context context) {
+        return BuildConfig.OPENWEATHERMAP_API_KEY;
     }
     
     /**
-     * Set the OpenWeatherMap API key
-     * @param apiKey API key string
+     * Retrieves the Plant ID API key
+     * @param context Application context (not used with BuildConfig but kept for API consistency)
+     * @return The API key or empty string if not found
      */
-    public static void setWeatherApiKey(String apiKey) {
-        WEATHER_API_KEY = apiKey;
-    }
-    
-    /**
-     * Get the Plant.id API key
-     * @return API key string
-     */
-    public static String getPlantIdApiKey() {
-        return PLANT_ID_API_KEY;
-    }
-    
-    /**
-     * Set the Plant.id API key
-     * @param apiKey API key string
-     */
-    public static void setPlantIdApiKey(String apiKey) {
-        PLANT_ID_API_KEY = apiKey;
+    public static String getPlantIdApiKey(Context context) {
+        return BuildConfig.PLANT_ID_API_KEY;
     }
 }

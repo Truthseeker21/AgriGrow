@@ -75,8 +75,8 @@ public class SplashActivity extends AppCompatActivity {
     private void initializeApiKeys() {
         try {
             // Get API keys from SecretKeys class which loads them from BuildConfig
-            String weatherApiKey = SecretKeys.getWeatherApiKey();
-            String plantIdApiKey = SecretKeys.getPlantIdApiKey();
+            String weatherApiKey = SecretKeys.getOpenWeatherMapApiKey(this);
+            String plantIdApiKey = SecretKeys.getPlantIdApiKey(this);
             
             // Validate API keys
             validateApiKeys(weatherApiKey, plantIdApiKey);

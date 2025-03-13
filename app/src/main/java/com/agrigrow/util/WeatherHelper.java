@@ -34,7 +34,7 @@ public class WeatherHelper {
     
     private static final String TAG = "WeatherHelper";
     private static final String WEATHER_API_BASE_URL = "https://api.openweathermap.org/data/2.5/";
-    private static String WEATHER_API_KEY = SecretKeys.getWeatherApiKey(); // Fetched from SecretKeys which uses BuildConfig
+    private static String WEATHER_API_KEY = ""; // Will be initialized in constructor from SecretKeys
     
     private final Context context;
     private final Executor executor;
@@ -57,6 +57,11 @@ public class WeatherHelper {
         this.context = context.getApplicationContext();
         this.executor = Executors.newSingleThreadExecutor();
         this.locationHelper = LocationHelper.getInstance(context);
+        
+        // Initialize API key from SecretKeys
+        if (WEATHER_API_KEY.isEmpty()) {
+            WEATHER_API_KEY = SecretKeys.getOpenWeatherMapApiKey(context);
+        }
     }
     
     /**

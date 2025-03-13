@@ -1,62 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary colors -->
     <color name="colorPrimary">#4CAF50</color>
-    <color name="colorPrimaryVariant">#388E3C</color>
-    <color name="colorPrimaryDark">#2E7D32</color>
-    <color name="colorAccent">#FF9800</color>
-    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorInfo">#2196F3</color>
     
-    <!-- Material Design 2.0 naming convention -->
-    <color name="primary">#4CAF50</color>
-    <color name="primary_variant">#388E3C</color>
-    <color name="primary_dark">#2E7D32</color>
-    <color name="accent">#FF9800</color>
-    <color name="on_primary">#FFFFFF</color>
+    <!-- Material Design Colors -->
+    <color name="md_green_50">#E8F5E9</color>
+    <color name="md_green_100">#C8E6C9</color>
+    <color name="md_green_200">#A5D6A7</color>
+    <color name="md_green_300">#81C784</color>
+    <color name="md_green_400">#66BB6A</color>
+    <color name="md_green_500">#4CAF50</color>
+    <color name="md_green_600">#43A047</color>
+    <color name="md_green_700">#388E3C</color>
+    <color name="md_green_800">#2E7D32</color>
+    <color name="md_green_900">#1B5E20</color>
     
-    <!-- Secondary colors -->
-    <color name="colorSecondary">#8BC34A</color>
-    <color name="colorSecondaryVariant">#689F38</color>
-    <color name="colorOnSecondary">#000000</color>
-    
-    <!-- Material Design 2.0 naming convention -->
-    <color name="secondary">#8BC34A</color>
-    <color name="secondary_variant">#689F38</color>
-    <color name="on_secondary">#000000</color>
-    
-    <!-- Neutral colors -->
-    <color name="colorBackground">#F5F5F5</color>
-    <color name="colorBackgroundVariant">#E8F5E9</color>
-    <color name="colorSurface">#FFFFFF</color>
-    <color name="colorError">#B00020</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    
-    <!-- Material Design 2.0 naming convention - these were missing -->
-    <color name="background">#F5F5F5</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="error">#B00020</color>
-    
-    <!-- Text colors -->
-    <color name="colorPrimaryText">#212121</color>
-    <color name="colorSecondaryText">#757575</color>
-    <color name="colorTertiaryText">#9E9E9E</color>
-    <color name="colorDivider">#EEEEEE</color>
-    
-    <!-- Material Design 2.0 naming convention -->
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
-    <color name="text_tertiary">#9E9E9E</color>
-    <color name="text_hint">#9E9E9E</color> <!-- This was missing -->
-    <color name="divider">#EEEEEE</color>
-    
-    <!-- Soil testing specific colors -->
-    <color name="colorHealthy">#4CAF50</color>
-    <color name="colorModerate">#FFC107</color>
-    <color name="colorPoor">#FF5722</color>
-    
-    <!-- Recommendation priority colors -->
-    <color name="colorPriority1">#F44336</color>
-    <color name="colorPriority2">#FF9800</color>
-    <color name="colorPriority3">#8BC34A</color>
+    <color name="gray_light">#EEEEEE</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_dark">#616161</color>
 </resources>

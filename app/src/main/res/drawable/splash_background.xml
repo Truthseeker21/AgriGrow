@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Background color -->
-    <item android:drawable="@color/primary" />
-    
-    <!-- App logo centered in the screen -->
-    <item>
+    <item android:drawable="@color/white" />
+    <item
+        android:drawable="@drawable/app_logo"
+        android:gravity="center"
+        android:width="120dp"
+        android:height="120dp" />
+    <item
+        android:bottom="48dp"
+        android:gravity="center_horizontal|bottom">
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/app_logo" />
     </item>
 </layer-list>

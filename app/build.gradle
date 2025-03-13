@@ -2,32 +2,37 @@ plugins {
     id 'com.android.application'
 }
 
-// Load properties
-def localProperties = new Properties()
-def localPropertiesFile = rootProject.file('local.properties')
-if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
-        localProperties.load(reader)
-    }
-}
-
 android {
     namespace "com.agrigrow"
-    compileSdk 32
-    
+    compileSdkVersion 33
     defaultConfig {
-        // Add API keys from local.properties
-        buildConfigField "String", "OPENWEATHERMAP_API_KEY", "\"${localProperties.getProperty('OPENWEATHERMAP_API_KEY', '')}\""
-        buildConfigField "String", "PLANT_ID_API_KEY", "\"${localProperties.getProperty('PLANT_ID_API_KEY', '')}\""
         applicationId "com.agrigrow"
-        minSdk 21
-        targetSdk 32
+        minSdkVersion 23
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        // Load API keys from local.properties
+        def localProperties = new Properties()
+        def localPropertiesFile = rootProject.file('local.properties')
+        if (localPropertiesFile.exists()) {
+            localPropertiesFile.withReader('UTF-8') { reader ->
+                localProperties.load(reader)
+            }
+        }
+        
+        // Set API keys in BuildConfig
+        buildConfigField "String", "OPENWEATHERMAP_API_KEY", getApiKey(localProperties, "OPENWEATHERMAP_API_KEY")
+        buildConfigField "String", "PLANT_ID_API_KEY", getApiKey(localProperties, "PLANT_ID_API_KEY")
+        
+        // Set API keys in manifest
+        manifestPlaceholders = [
+                OPENWEATHERMAP_API_KEY: getApiKeyPlain(localProperties, "OPENWEATHERMAP_API_KEY"),
+                PLANT_ID_API_KEY: getApiKeyPlain(localProperties, "PLANT_ID_API_KEY")
+        ]
     }
-
+    
     buildTypes {
         release {
             minifyEnabled false
@@ -36,8 +41,8 @@ android {
     }
     
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     
     buildFeatures {
@@ -46,59 +51,48 @@ android {
     }
 }
 
-configurations.all {
-    resolutionStrategy {
-        // Force consistent versions of lifecycle components
-        force 'androidx.lifecycle:lifecycle-viewmodel:2.4.1'
-        force 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
-        force 'androidx.lifecycle:lifecycle-livedata:2.4.1'
-        force 'androidx.core:core-ktx:1.8.0'
-    }
+// Function to read API key from local.properties with quotes for BuildConfigField
+def getApiKey(Properties properties, String name) {
+    return properties.getProperty(name) != null ? "\"" + properties.getProperty(name) + "\"" : "\"\"";
+}
+
+// Function to read API key from local.properties without quotes for manifestPlaceholders
+def getApiKeyPlain(Properties properties, String name) {
+    return properties.getProperty(name) != null ? properties.getProperty(name) : "";
 }
 
 dependencies {
-    // Android Core
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'androidx.core:core-ktx:1.8.0'
+    // AndroidX Core libraries
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
     
-    // Material Design
-    implementation 'com.google.android.material:material:1.6.1'
+    // Material Design Components
+    implementation 'com.google.android.material:material:1.9.0'
     
     // Navigation Components
-    implementation 'androidx.navigation:navigation-fragment:2.4.2'
-    implementation 'androidx.navigation:navigation-ui:2.4.2'
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
+    implementation 'androidx.navigation:navigation-ui:2.6.0'
+    
+    // Lifecycle Components
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
     
     // Room Database
-    implementation 'androidx.room:room-runtime:2.4.3'
-    annotationProcessor 'androidx.room:room-compiler:2.4.3'
+    implementation 'androidx.room:room-runtime:2.5.2'
+    annotationProcessor 'androidx.room:room-compiler:2.5.2'
     
-    // LiveData and ViewModel - forcing consistent versions
-    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.4.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1' // Updated to match version
-    implementation 'androidx.lifecycle:lifecycle-livedata:2.4.1'
-    
-    // Glide for image loading
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
-    
-    // Retrofit for API calls
+    // Network & Image Loading
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    
-    // OkHttp for networking
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
-    
-    // Google Play Services - Maps
-    implementation 'com.google.android.gms:play-services-maps:18.0.2'
-    implementation 'com.google.android.gms:play-services-location:20.0.0'
-    
-    // AR Core
-    implementation 'com.google.ar:core:1.35.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
     
     // Testing
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
