@@ -32,6 +32,11 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     
+    <!-- Material Design 2.0 naming convention - these were missing -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+    
     <!-- Text colors -->
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#757575</color>
@@ -42,6 +47,7 @@
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
     <color name="text_tertiary">#9E9E9E</color>
+    <color name="text_hint">#9E9E9E</color> <!-- This was missing -->
     <color name="divider">#EEEEEE</color>
     
     <!-- Soil testing specific colors -->

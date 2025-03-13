@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Video Screen Background -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M10,20L110,20L110,90L10,90Z" />
+    
+    <!-- Video Screen Content Area -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M15,25L105,25L105,85L15,85Z" />
+    
+    <!-- Video Subject - Garden Plot -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M25,55L95,80L95,85L25,85Z" />
+    
+    <!-- Garden Plants -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M35,60C35,60 30,70 35,80C35,80 40,70 35,60Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M35,65C35,65 30,64 28,67C28,67 35,66 35,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M35,65C35,65 40,64 42,67C42,67 35,66 35,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M35,72C35,72 30,71 28,74C28,74 35,73 35,72Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M35,72C35,72 40,71 42,74C42,74 35,73 35,72Z" />
+    
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M55,60C55,60 50,70 55,80C55,80 60,70 55,60Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,65C55,65 50,64 48,67C48,67 55,66 55,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,65C55,65 60,64 62,67C62,67 55,66 55,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,72C55,72 50,71 48,74C48,74 55,73 55,72Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,72C55,72 60,71 62,74C62,74 55,73 55,72Z" />
+    
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M75,60C75,60 70,70 75,80C75,80 80,70 75,60Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,65C75,65 70,64 68,67C68,67 75,66 75,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,65C75,65 80,64 82,67C82,67 75,66 75,65Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,72C75,72 70,71 68,74C68,74 75,73 75,72Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,72C75,72 80,71 82,74C82,74 75,73 75,72Z" />
+    
+    <!-- Gardening Tool in Video -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M85,55L90,55L90,65L85,65Z" />
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M85,45L90,45L90,55L85,55Z" />
+    
+    <!-- Video Controls Bar -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M15,85L105,85L105,95L15,95Z" />
+    
+    <!-- Play Button -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,90m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M28,87L33,90L28,93Z" />
+    
+    <!-- Progress Bar -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M40,90L90,90L90,91L40,91Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M40,90L60,90L60,91L40,91Z" />
+    
+    <!-- Sky in the Video -->
+    <path
+        android:fillColor="#81D4FA"
+        android:pathData="M15,25L105,25L105,55L15,55Z" />
+    
+    <!-- Sun in the Video -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M25,35m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+</vector>

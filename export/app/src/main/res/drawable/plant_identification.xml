@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Camera Viewfinder -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M30,30L90,30L90,90L30,90Z" />
+    
+    <!-- Plant Inside Viewfinder -->
+    <!-- Main Stem -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,60L60,90" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M60,60L60,90" />
+    
+    <!-- Main Leaves -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,60C60,60 50,50 60,40C70,50 60,60 60,60Z" />
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,60C60,60 70,50 60,40C50,50 60,60 60,60Z" />
+    
+    <!-- Side Leaves Left -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,65C60,65 50,60 45,70C55,75 60,65 60,65Z" />
+    
+    <!-- Side Leaves Right -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,65C60,65 70,60 75,70C65,75 60,65 60,65Z" />
+    
+    <!-- More Side Leaves Left -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,75C60,75 50,70 45,80C55,85 60,75 60,75Z" />
+    
+    <!-- More Side Leaves Right -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M60,75C60,75 70,70 75,80C65,85 60,75 60,75Z" />
+    
+    <!-- Viewfinder Corner Guides -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:pathData="M30,40L30,30L40,30" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:pathData="M80,30L90,30L90,40" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:pathData="M30,80L30,90L40,90" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:pathData="M80,90L90,90L90,80" />
+    
+    <!-- Scanning Line -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:strokeDasharray="5,3"
+        android:pathData="M35,60L85,60" />
+    
+    <!-- Magnifying Glass -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M80,25m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+    
+    <!-- Magnifying Glass Handle -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:pathData="M87,32L95,40" />
+    
+    <!-- Information Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M20,90m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+    
+    <!-- Information Icon "i" -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M20,85m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M20,88L20,95" />
+    
+    <!-- Plant Information Panel -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:pathData="M92,70L115,70L115,95L92,95Z" />
+    
+    <!-- Plant Information Text Lines -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:pathData="M95,75L112,75" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:pathData="M95,80L112,80" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:pathData="M95,85L112,85" />
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:pathData="M95,90L105,90" />
+    
+    <!-- Info Panel Connector -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:strokeDasharray="3,2"
+        android:pathData="M85,75L92,75" />
+</vector>

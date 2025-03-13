@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Plant Pot -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M35,90L85,90L80,115L40,115Z" />
+    
+    <!-- Soil -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M40,92L80,92L80,100L40,100Z" />
+    
+    <!-- Main Stem -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,45C60,45 58,65 60,90C60,90 62,65 60,45Z" />
+    
+    <!-- Branches -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,55C60,55 50,50 45,55C45,55 55,55 60,55Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,55C60,55 70,50 75,55C75,55 65,55 60,55Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,65C60,65 50,60 45,65C45,65 55,65 60,65Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,65C60,65 70,60 75,65C75,65 65,65 60,65Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,75C60,75 50,70 45,75C45,75 55,75 60,75Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M60,75C60,75 70,70 75,75C75,75 65,75 60,75Z" />
+    
+    <!-- Leaves -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,45C60,45 50,35 40,40C40,40 55,40 60,45Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,45C60,45 70,35 80,40C80,40 65,40 60,45Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M45,55m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M75,55m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M45,65m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M75,65m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M45,75m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M75,75m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    
+    <!-- Peppers -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M45,60L47,60L47,72L45,72Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M75,60L77,60L77,72L75,72Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M45,80L47,80L47,90L45,90Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M75,80L77,80L77,90L75,90Z" />
+    
+    <!-- Pepper Details -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M46,60m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M76,60m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M46,80m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M76,80m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+</vector>

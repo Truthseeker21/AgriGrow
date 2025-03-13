@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Pot -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M40,90L80,90L75,110L45,110Z" />
+    
+    <!-- Pot Rim -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M38,90L82,90L82,95L38,95Z" />
+    
+    <!-- Soil -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M45,95L75,95L75,100L45,100Z" />
+    
+    <!-- Lettuce Base -->
+    <path
+        android:fillColor="#7CB342"
+        android:pathData="M50,75C50,65 70,65 70,75C70,85 50,85 50,75Z" />
+    
+    <!-- Lettuce Leaves - Outer Layer -->
+    <!-- Bottom Leaf -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,80C55,80 45,85 50,90C55,90 60,85 55,80Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M65,80C65,80 75,85 70,90C65,90 60,85 65,80Z" />
+    
+    <!-- Left Side Leaf -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M50,75C50,75 40,70 40,75C40,80 45,85 50,75Z" />
+    
+    <!-- Right Side Leaf -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M70,75C70,75 80,70 80,75C80,80 75,85 70,75Z" />
+    
+    <!-- Top Left Leaf -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M55,70C55,70 45,65 45,60C50,60 60,65 55,70Z" />
+    
+    <!-- Top Right Leaf -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M65,70C65,70 75,65 75,60C70,60 60,65 65,70Z" />
+    
+    <!-- Lettuce Leaves - Middle Layer -->
+    <!-- Bottom Leaf -->
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M55,75C55,75 50,80 55,85C60,80 60,75 55,75Z" />
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M65,75C65,75 70,80 65,85C60,80 60,75 65,75Z" />
+    
+    <!-- Left Leaf -->
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M55,70C55,70 45,70 50,75C55,75 55,70 55,70Z" />
+    
+    <!-- Right Leaf -->
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M65,70C65,70 75,70 70,75C65,75 65,70 65,70Z" />
+    
+    <!-- Top Leaf -->
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M55,65C55,65 55,60 60,60C65,60 65,65 55,65Z" />
+    
+    <!-- Lettuce Leaves - Inner Layer -->
+    <path
+        android:fillColor="#AED581"
+        android:pathData="M60,65C60,65 55,70 60,75C65,70 60,65 60,65Z" />
+    <path
+        android:fillColor="#AED581"
+        android:pathData="M60,65C60,65 65,70 60,75C55,70 60,65 60,65Z" />
+    <path
+        android:fillColor="#AED581"
+        android:pathData="M60,65C60,65 55,60 60,65C65,60 60,65 60,65Z" />
+    
+    <!-- Leaf Details - Veins -->
+    <path
+        android:strokeColor="#689F38"
+        android:strokeWidth="0.5"
+        android:pathData="M45,62L55,70M75,62L65,70M45,75L55,75M75,75L65,75M50,88L55,80M70,88L65,80" />
+    
+    <!-- Central Lettuce Core -->
+    <path
+        android:fillColor="#C5E1A5"
+        android:pathData="M60,65m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+</vector>
